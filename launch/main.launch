@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+
+<launch>
+   <!--  <include file="$(find final_assignment)/launch/move_base.launch"></include> -->
+   <!--   <include file="$(find final_assignment)/launch/simulation_gmapping.launch"></include> -->
+   <include file="$(find final_assignment)/launch/bug_algo.launch"></include> 
+
+
+    <arg name="des_x" default= "5" />
+    <arg name="des_y" default= "-7" />
+    <arg name="state" default= "3" />
+    <arg name="newstate" default= "3"/>
+    <arg name="change" default= "0" />
+    
+    <param name="des_pos_x" value="$(arg des_x)" />
+    <param name="des_pos_y" value="$(arg des_y)" />
+    <param name="state" value="$(arg state)" />
+    <param name="newstate" value="$(arg newstate)" />
+    <param name="change" value="$(arg change)" />
+    
+    
+    <node pkg="final_assignment" type="wall_follower_service.py" name="wall_follower_service"/>
+    <node pkg="final_assignment"  type="big_user_interface.py" name="big_user_interface" output="screen" />
+    <node pkg="final_assignment" type="big_brain.py" name="big_brain" output="screen"/>
+</launch>

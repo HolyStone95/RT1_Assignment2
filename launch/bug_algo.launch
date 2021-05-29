@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+
+<launch>
+	<!--<include file="$(find robot_description)/launch/sim_w1.launch"></include>-->
+
+
+
+    <arg name="start_time" default= "0"/>
+    <arg name="user" default= "0"/>
+
+    <param name="start_time" value="$(arg start_time)" />
+    <param name="user" value="$(arg user)" />
+    <node pkg="final_assignment" type="wall_follower_service_bug.py" name="wall_follower_bug" />
+    <node pkg="final_assignment" type="go_to_point_service_bug.py" name="go_to_point" />
+    <node pkg="final_assignment" type="user_interface.py" name="user_interface" output="screen" />
+    <node pkg="final_assignment" type="bug_algo.py" name="bug0" output="screen" />
+</launch>

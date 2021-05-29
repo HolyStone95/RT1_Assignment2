@@ -1,0 +1,5 @@
+<map id="wall_follower_service_bug.main" name="wall_follower_service_bug.main">
+<area shape="rect" id="node2" href="$namespacewall__follower__service__bug.html#ad7fc86411b01be176df591cf952867e7" title="wall_follower_service\l_bug.find_wall" alt="" coords="205,5,357,47"/>
+<area shape="rect" id="node3" href="$namespacewall__follower__service__bug.html#a751a4853e801f3643502f84267a49713" title="wall_follower_service\l_bug.turn_left" alt="" coords="205,71,357,112"/>
+<area shape="rect" id="node4" href="$namespacewall__follower__service__bug.html#aaf1e0a62c74840d77f6470c69efdc5fe" title="wall_follower_service\l_bug.follow_the_wall" alt="" coords="205,136,357,177"/>
+</map>

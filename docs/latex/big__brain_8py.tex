@@ -1,0 +1,51 @@
+\hypertarget{big__brain_8py}{}\section{scripts/big\+\_\+brain.py File Reference}
+\label{big__brain_8py}\index{scripts/big\+\_\+brain.\+py@{scripts/big\+\_\+brain.\+py}}
+\subsection*{Namespaces}
+\begin{DoxyCompactItemize}
+\item 
+ \hyperlink{namespacebig__brain}{big\+\_\+brain}
+\item 
+ \hyperlink{namespacefinal__assignment}{final\+\_\+assignment}
+\begin{DoxyCompactList}\small\item\em This node is in charge of monitoring the state of the robot, and activate the corresping services and behaviour. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \hyperlink{namespacebig__brain_a815c120863ef1a5db7bf743bc9bb6f54}{big\+\_\+brain.\+clbk\+\_\+odom} (msg)
+\begin{DoxyCompactList}\small\item\em Callback for keeping track of robot pose. \end{DoxyCompactList}\item 
+def \hyperlink{namespacebig__brain_adfc26e0690fd9fe893e09be5400a8b7d}{big\+\_\+brain.\+distance} ()
+\begin{DoxyCompactList}\small\item\em Function for computing the distance from the robot actual position to the desired position. \end{DoxyCompactList}\item 
+def \hyperlink{namespacebig__brain_a4f091a106e4ba678afd9bc2df4f2789b}{big\+\_\+brain.\+new\+\_\+goal} ()
+\begin{DoxyCompactList}\small\item\em Function for setting a new target with a Move\+Base\+Action\+Goal msg on topic /movebase/goal. \end{DoxyCompactList}\item 
+def \hyperlink{namespacebig__brain_a108d0111d106a89cde8da1c2f494ab3c}{big\+\_\+brain.\+change\+\_\+state} (state)
+\begin{DoxyCompactList}\small\item\em Function for changing the state of the robot. \end{DoxyCompactList}\item 
+def \hyperlink{namespacebig__brain_a06516fa995f70f4013ee893ae15c5cea}{big\+\_\+brain.\+main} ()
+\begin{DoxyCompactList}\small\item\em Main function. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{namespacebig__brain_a9f12d1c3982160fe18122c7a2c4aa860}{big\+\_\+brain.\+twist\+\_\+pub} = None
+\begin{DoxyCompactList}\small\item\em Publisher that publishes on /cmd\+\_\+vel to stop the robot when entering in state of \textquotesingle{}stop\textquotesingle{}. \end{DoxyCompactList}\item 
+\hyperlink{namespacebig__brain_a757b56b184f850f2599be2279ac94777}{big\+\_\+brain.\+mvgoal\+\_\+pub} = None
+\begin{DoxyCompactList}\small\item\em Publisher that publish a Move\+Base\+Action\+Goal msg on /move\+\_\+base/goal to make the robot reach the goal. \end{DoxyCompactList}\item 
+\hyperlink{namespacebig__brain_acbbe2e86c0b737f0caaff69ce22b4aa8}{big\+\_\+brain.\+mvcancel\+\_\+pub} = None
+\begin{DoxyCompactList}\small\item\em Publisher that publish a Goal\+ID msg on /move\+\_\+base/cancel to cancel a previous goal. \end{DoxyCompactList}\item 
+\hyperlink{namespacebig__brain_a954157b5770aed51dc667611f39855b0}{big\+\_\+brain.\+srv\+\_\+client\+\_\+wall\+\_\+follower\+\_\+} = None
+\begin{DoxyCompactList}\small\item\em Client for activating the service for wall following behaviour. \end{DoxyCompactList}\item 
+\hyperlink{namespacebig__brain_a946162ac048b8df1f02003b37bd96812}{big\+\_\+brain.\+srv\+\_\+client\+\_\+user\+\_\+interface\+\_\+assignment\+\_\+} = None
+\begin{DoxyCompactList}\small\item\em Client for activating the service calling the user main user interface. \end{DoxyCompactList}\item 
+\hyperlink{namespacebig__brain_a60d3104e99b35d213a90529c7bc5a573}{big\+\_\+brain.\+srv\+\_\+client\+\_\+bug\+\_\+algorithm\+\_\+} = None
+\begin{DoxyCompactList}\small\item\em C\+Lient for activating the bug navigation behaviour. \end{DoxyCompactList}\item 
+\hyperlink{namespacebig__brain_a463bcdb8c7ed9954756492cdce9a43e2}{big\+\_\+brain.\+position\+\_\+} = Point()
+\begin{DoxyCompactList}\small\item\em Variable containing position of the robot. \end{DoxyCompactList}\item 
+\hyperlink{namespacebig__brain_a5f0f2fbee791fd60caa7a9dcf6ca1e00}{big\+\_\+brain.\+regions\+\_\+} = None
+\begin{DoxyCompactList}\small\item\em Variables for controlling laser data. \end{DoxyCompactList}\item 
+int \hyperlink{namespacebig__brain_ac43f9e8255d9b336a4f3ebe4dc3d2246}{big\+\_\+brain.\+change\+\_\+} = 0
+\begin{DoxyCompactList}\small\item\em Variable for checking if a new state has been issued. \end{DoxyCompactList}\item 
+list \hyperlink{namespacebig__brain_ab730e09c9bd7f5c7a1c09a8ea55a9029}{big\+\_\+brain.\+state\+\_\+desc\+\_\+} = \mbox{[}\textquotesingle{}random target\textquotesingle{}, \textquotesingle{}get target\textquotesingle{}, \textquotesingle{}wall fallowing\textquotesingle{},\textquotesingle{}stop\textquotesingle{},\textquotesingle{}bug\textquotesingle{}\mbox{]}
+\begin{DoxyCompactList}\small\item\em States of the robot definiton. \end{DoxyCompactList}\item 
+int \hyperlink{namespacebig__brain_a95db081b16847592a7981a7205e66358}{big\+\_\+brain.\+state\+\_\+} = 0
+\begin{DoxyCompactList}\small\item\em Variable cointaining the actual state of the robot. \end{DoxyCompactList}\item 
+int \hyperlink{namespacebig__brain_a28f405a0651539e59bd455a35ab07a3c}{big\+\_\+brain.\+newstate\+\_\+} = 0
+\begin{DoxyCompactList}\small\item\em Variable containing the new state of the robot. \end{DoxyCompactList}\item 
+int \hyperlink{namespacebig__brain_a82350019fe3047e74222abd0d6b07c14}{big\+\_\+brain.\+user\+\_\+} = 0
+\begin{DoxyCompactList}\small\item\em Variable to control the different user interface when the behaviour is switched to bug. \end{DoxyCompactList}\end{DoxyCompactItemize}

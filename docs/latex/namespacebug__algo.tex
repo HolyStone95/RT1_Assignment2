@@ -1,0 +1,241 @@
+\hypertarget{namespacebug__algo}{}\section{bug\+\_\+algo Namespace Reference}
+\label{namespacebug__algo}\index{bug\+\_\+algo@{bug\+\_\+algo}}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \hyperlink{namespacebug__algo_a6a72a118f8a289bf80b1fe79487b273f}{clbk\+\_\+odom} (msg)
+\begin{DoxyCompactList}\small\item\em Function to retrieve robot pose. \end{DoxyCompactList}\item 
+def \hyperlink{namespacebug__algo_a4363ca4faa041280e958c5141bc3bde8}{clbk\+\_\+laser} (msg)
+\begin{DoxyCompactList}\small\item\em Laser data callback. \end{DoxyCompactList}\item 
+def \hyperlink{namespacebug__algo_afe2965502b3ec1efdb6ac2dadfb9a5de}{bug\+\_\+algorithm\+\_\+srv} (req)
+\begin{DoxyCompactList}\small\item\em Function activated on service request. \end{DoxyCompactList}\item 
+def \hyperlink{namespacebug__algo_aca287deda75aa8d0f790135ef47b6a16}{change\+\_\+state} (state)
+\begin{DoxyCompactList}\small\item\em Change state function. \end{DoxyCompactList}\item 
+def \hyperlink{namespacebug__algo_ae499da57d8d88a30b64054480fdb60c8}{normalize\+\_\+angle} (angle)
+\begin{DoxyCompactList}\small\item\em Normalize angle function. \end{DoxyCompactList}\item 
+def \hyperlink{namespacebug__algo_a8df2ef2049aa935d5478597523b50dcb}{main} ()
+\begin{DoxyCompactList}\small\item\em Main function. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+bool \hyperlink{namespacebug__algo_a3bec537d2bfc115b0a14ee6bad41bd00}{active\+\_\+} = False
+\item 
+int \hyperlink{namespacebug__algo_a6ff626c7bf6a4dfec4e8508d8ae5097c}{start\+\_\+time} = 0
+\item 
+int \hyperlink{namespacebug__algo_af723ba0d909555b34934483c74e06818}{elapsed\+\_\+time} = 0
+\item 
+int \hyperlink{namespacebug__algo_af9e77fe7842316d1491ef585c7602710}{actual\+\_\+time} = 0
+\item 
+\hyperlink{namespacebug__algo_a17a7504f2f0f6714f6ac31a43107fc31}{pub} = None
+\item 
+\hyperlink{namespacebug__algo_a52e8d210b667d955534f12f59f191eb3}{srv\+\_\+client\+\_\+go\+\_\+to\+\_\+point\+\_\+} = None
+\item 
+\hyperlink{namespacebug__algo_afe0f6c6a1a9bc751e4bbcae499815585}{srv\+\_\+client\+\_\+wall\+\_\+follower\+\_\+} = None
+\item 
+\hyperlink{namespacebug__algo_a1a55011236874d9af4afcf4c3524bbf0}{srv\+\_\+client\+\_\+user\+\_\+interface\+\_\+} = None
+\item 
+\hyperlink{namespacebug__algo_ac9de3b470960260c4510748850446480}{srv\+\_\+client\+\_\+user\+\_\+interface\+\_\+assignment\+\_\+} = None
+\item 
+int \hyperlink{namespacebug__algo_a2c8d86dd369e86415dc7ff9c617033d7}{yaw\+\_\+} = 0
+\item 
+int \hyperlink{namespacebug__algo_a3714c955ff3cf688c84d6dc5654833d6}{yaw\+\_\+error\+\_\+allowed\+\_\+} = 5
+\item 
+\hyperlink{namespacebug__algo_ac0035ad008802f966f437b4787365220}{position\+\_\+} = Point()
+\item 
+\hyperlink{namespacebug__algo_a6bc76d9dd5213819c8287c8833f8f3bd}{desired\+\_\+position\+\_\+} = Point()
+\item 
+\hyperlink{namespacebug__algo_ae006850add8691db5d752b4ccb732ac1}{x}
+\item 
+\hyperlink{namespacebug__algo_a1e2d049a4b898c92454f0fb146a413ee}{y}
+\item 
+\hyperlink{namespacebug__algo_ad9944dcf5037184fbfbe3162935d2a57}{z}
+\item 
+\hyperlink{namespacebug__algo_a31fd6300649f8a600eb87ebed00b174f}{regions\+\_\+} = None
+\item 
+list \hyperlink{namespacebug__algo_a419cb7998b9a3946692fc01f5d73a25b}{state\+\_\+desc\+\_\+} = \mbox{[}\textquotesingle{}Go to point\textquotesingle{}, \textquotesingle{}wall following\textquotesingle{}, \textquotesingle{}stopped\textquotesingle{}\mbox{]}
+\item 
+int \hyperlink{namespacebug__algo_a5bf52a66b7821a097f6e653a2422748e}{state\+\_\+} = 0
+\end{DoxyCompactItemize}
+
+
+\subsection{Function Documentation}
+\index{bug\+\_\+algo@{bug\+\_\+algo}!bug\+\_\+algorithm\+\_\+srv@{bug\+\_\+algorithm\+\_\+srv}}
+\index{bug\+\_\+algorithm\+\_\+srv@{bug\+\_\+algorithm\+\_\+srv}!bug\+\_\+algo@{bug\+\_\+algo}}
+\subsubsection[{\texorpdfstring{bug\+\_\+algorithm\+\_\+srv(req)}{bug_algorithm_srv(req)}}]{\setlength{\rightskip}{0pt plus 5cm}def bug\+\_\+algo.\+bug\+\_\+algorithm\+\_\+srv (
+\begin{DoxyParamCaption}
+\item[{}]{req}
+\end{DoxyParamCaption}
+)}\hypertarget{namespacebug__algo_afe2965502b3ec1efdb6ac2dadfb9a5de}{}\label{namespacebug__algo_afe2965502b3ec1efdb6ac2dadfb9a5de}
+
+
+Function activated on service request. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em req} & is the request of the service \\
+\hline
+\end{DoxyParams}
+
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacebug__algo_afe2965502b3ec1efdb6ac2dadfb9a5de_cgraph}
+\end{center}
+\end{figure}
+
+
+\index{bug\+\_\+algo@{bug\+\_\+algo}!change\+\_\+state@{change\+\_\+state}}
+\index{change\+\_\+state@{change\+\_\+state}!bug\+\_\+algo@{bug\+\_\+algo}}
+\subsubsection[{\texorpdfstring{change\+\_\+state(state)}{change_state(state)}}]{\setlength{\rightskip}{0pt plus 5cm}def bug\+\_\+algo.\+change\+\_\+state (
+\begin{DoxyParamCaption}
+\item[{}]{state}
+\end{DoxyParamCaption}
+)}\hypertarget{namespacebug__algo_aca287deda75aa8d0f790135ef47b6a16}{}\label{namespacebug__algo_aca287deda75aa8d0f790135ef47b6a16}
+
+
+Change state function. 
+
+manage the change of status of the robot, activating the corresponding services 
+\begin{DoxyParams}{Parameters}
+{\em state} & is the desired state \\
+\hline
+\end{DoxyParams}
+
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacebug__algo_aca287deda75aa8d0f790135ef47b6a16_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{bug\+\_\+algo@{bug\+\_\+algo}!clbk\+\_\+laser@{clbk\+\_\+laser}}
+\index{clbk\+\_\+laser@{clbk\+\_\+laser}!bug\+\_\+algo@{bug\+\_\+algo}}
+\subsubsection[{\texorpdfstring{clbk\+\_\+laser(msg)}{clbk_laser(msg)}}]{\setlength{\rightskip}{0pt plus 5cm}def bug\+\_\+algo.\+clbk\+\_\+laser (
+\begin{DoxyParamCaption}
+\item[{}]{msg}
+\end{DoxyParamCaption}
+)}\hypertarget{namespacebug__algo_a4363ca4faa041280e958c5141bc3bde8}{}\label{namespacebug__algo_a4363ca4faa041280e958c5141bc3bde8}
+
+
+Laser data callback. 
+
+output are localized in the robot in 5 regions organized as at the bottom variable regions\+\_\+ separes the output of lasers \index{bug\+\_\+algo@{bug\+\_\+algo}!clbk\+\_\+odom@{clbk\+\_\+odom}}
+\index{clbk\+\_\+odom@{clbk\+\_\+odom}!bug\+\_\+algo@{bug\+\_\+algo}}
+\subsubsection[{\texorpdfstring{clbk\+\_\+odom(msg)}{clbk_odom(msg)}}]{\setlength{\rightskip}{0pt plus 5cm}def bug\+\_\+algo.\+clbk\+\_\+odom (
+\begin{DoxyParamCaption}
+\item[{}]{msg}
+\end{DoxyParamCaption}
+)}\hypertarget{namespacebug__algo_a6a72a118f8a289bf80b1fe79487b273f}{}\label{namespacebug__algo_a6a72a118f8a289bf80b1fe79487b273f}
+
+
+Function to retrieve robot pose. 
+
+it\textquotesingle{}s the callback for the subscriber on topic /odom \index{bug\+\_\+algo@{bug\+\_\+algo}!main@{main}}
+\index{main@{main}!bug\+\_\+algo@{bug\+\_\+algo}}
+\subsubsection[{\texorpdfstring{main()}{main()}}]{\setlength{\rightskip}{0pt plus 5cm}def bug\+\_\+algo.\+main (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{namespacebug__algo_a8df2ef2049aa935d5478597523b50dcb}{}\label{namespacebug__algo_a8df2ef2049aa935d5478597523b50dcb}
+
+
+Main function. 
+
+Initalizes all the necessary pubs, subs ,clients and server It basically works as state machine with in addition some controls about the elapsed time that might result in aborting the reaching 
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=331pt]{namespacebug__algo_a8df2ef2049aa935d5478597523b50dcb_cgraph}
+\end{center}
+\end{figure}
+
+
+\index{bug\+\_\+algo@{bug\+\_\+algo}!normalize\+\_\+angle@{normalize\+\_\+angle}}
+\index{normalize\+\_\+angle@{normalize\+\_\+angle}!bug\+\_\+algo@{bug\+\_\+algo}}
+\subsubsection[{\texorpdfstring{normalize\+\_\+angle(angle)}{normalize_angle(angle)}}]{\setlength{\rightskip}{0pt plus 5cm}def bug\+\_\+algo.\+normalize\+\_\+angle (
+\begin{DoxyParamCaption}
+\item[{}]{angle}
+\end{DoxyParamCaption}
+)}\hypertarget{namespacebug__algo_ae499da57d8d88a30b64054480fdb60c8}{}\label{namespacebug__algo_ae499da57d8d88a30b64054480fdb60c8}
+
+
+Normalize angle function. 
+
+normalizes an angle 
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=313pt]{namespacebug__algo_ae499da57d8d88a30b64054480fdb60c8_icgraph}
+\end{center}
+\end{figure}
+
+
+
+
+\subsection{Variable Documentation}
+\index{bug\+\_\+algo@{bug\+\_\+algo}!active\+\_\+@{active\+\_\+}}
+\index{active\+\_\+@{active\+\_\+}!bug\+\_\+algo@{bug\+\_\+algo}}
+\subsubsection[{\texorpdfstring{active\+\_\+}{active_}}]{\setlength{\rightskip}{0pt plus 5cm}bool bug\+\_\+algo.\+active\+\_\+ = False}\hypertarget{namespacebug__algo_a3bec537d2bfc115b0a14ee6bad41bd00}{}\label{namespacebug__algo_a3bec537d2bfc115b0a14ee6bad41bd00}
+\index{bug\+\_\+algo@{bug\+\_\+algo}!actual\+\_\+time@{actual\+\_\+time}}
+\index{actual\+\_\+time@{actual\+\_\+time}!bug\+\_\+algo@{bug\+\_\+algo}}
+\subsubsection[{\texorpdfstring{actual\+\_\+time}{actual_time}}]{\setlength{\rightskip}{0pt plus 5cm}int bug\+\_\+algo.\+actual\+\_\+time = 0}\hypertarget{namespacebug__algo_af9e77fe7842316d1491ef585c7602710}{}\label{namespacebug__algo_af9e77fe7842316d1491ef585c7602710}
+\index{bug\+\_\+algo@{bug\+\_\+algo}!desired\+\_\+position\+\_\+@{desired\+\_\+position\+\_\+}}
+\index{desired\+\_\+position\+\_\+@{desired\+\_\+position\+\_\+}!bug\+\_\+algo@{bug\+\_\+algo}}
+\subsubsection[{\texorpdfstring{desired\+\_\+position\+\_\+}{desired_position_}}]{\setlength{\rightskip}{0pt plus 5cm}bug\+\_\+algo.\+desired\+\_\+position\+\_\+ = Point()}\hypertarget{namespacebug__algo_a6bc76d9dd5213819c8287c8833f8f3bd}{}\label{namespacebug__algo_a6bc76d9dd5213819c8287c8833f8f3bd}
+\index{bug\+\_\+algo@{bug\+\_\+algo}!elapsed\+\_\+time@{elapsed\+\_\+time}}
+\index{elapsed\+\_\+time@{elapsed\+\_\+time}!bug\+\_\+algo@{bug\+\_\+algo}}
+\subsubsection[{\texorpdfstring{elapsed\+\_\+time}{elapsed_time}}]{\setlength{\rightskip}{0pt plus 5cm}int bug\+\_\+algo.\+elapsed\+\_\+time = 0}\hypertarget{namespacebug__algo_af723ba0d909555b34934483c74e06818}{}\label{namespacebug__algo_af723ba0d909555b34934483c74e06818}
+\index{bug\+\_\+algo@{bug\+\_\+algo}!position\+\_\+@{position\+\_\+}}
+\index{position\+\_\+@{position\+\_\+}!bug\+\_\+algo@{bug\+\_\+algo}}
+\subsubsection[{\texorpdfstring{position\+\_\+}{position_}}]{\setlength{\rightskip}{0pt plus 5cm}bug\+\_\+algo.\+position\+\_\+ = Point()}\hypertarget{namespacebug__algo_ac0035ad008802f966f437b4787365220}{}\label{namespacebug__algo_ac0035ad008802f966f437b4787365220}
+\index{bug\+\_\+algo@{bug\+\_\+algo}!pub@{pub}}
+\index{pub@{pub}!bug\+\_\+algo@{bug\+\_\+algo}}
+\subsubsection[{\texorpdfstring{pub}{pub}}]{\setlength{\rightskip}{0pt plus 5cm}bug\+\_\+algo.\+pub = None}\hypertarget{namespacebug__algo_a17a7504f2f0f6714f6ac31a43107fc31}{}\label{namespacebug__algo_a17a7504f2f0f6714f6ac31a43107fc31}
+\index{bug\+\_\+algo@{bug\+\_\+algo}!regions\+\_\+@{regions\+\_\+}}
+\index{regions\+\_\+@{regions\+\_\+}!bug\+\_\+algo@{bug\+\_\+algo}}
+\subsubsection[{\texorpdfstring{regions\+\_\+}{regions_}}]{\setlength{\rightskip}{0pt plus 5cm}bug\+\_\+algo.\+regions\+\_\+ = None}\hypertarget{namespacebug__algo_a31fd6300649f8a600eb87ebed00b174f}{}\label{namespacebug__algo_a31fd6300649f8a600eb87ebed00b174f}
+\index{bug\+\_\+algo@{bug\+\_\+algo}!srv\+\_\+client\+\_\+go\+\_\+to\+\_\+point\+\_\+@{srv\+\_\+client\+\_\+go\+\_\+to\+\_\+point\+\_\+}}
+\index{srv\+\_\+client\+\_\+go\+\_\+to\+\_\+point\+\_\+@{srv\+\_\+client\+\_\+go\+\_\+to\+\_\+point\+\_\+}!bug\+\_\+algo@{bug\+\_\+algo}}
+\subsubsection[{\texorpdfstring{srv\+\_\+client\+\_\+go\+\_\+to\+\_\+point\+\_\+}{srv_client_go_to_point_}}]{\setlength{\rightskip}{0pt plus 5cm}bug\+\_\+algo.\+srv\+\_\+client\+\_\+go\+\_\+to\+\_\+point\+\_\+ = None}\hypertarget{namespacebug__algo_a52e8d210b667d955534f12f59f191eb3}{}\label{namespacebug__algo_a52e8d210b667d955534f12f59f191eb3}
+\index{bug\+\_\+algo@{bug\+\_\+algo}!srv\+\_\+client\+\_\+user\+\_\+interface\+\_\+@{srv\+\_\+client\+\_\+user\+\_\+interface\+\_\+}}
+\index{srv\+\_\+client\+\_\+user\+\_\+interface\+\_\+@{srv\+\_\+client\+\_\+user\+\_\+interface\+\_\+}!bug\+\_\+algo@{bug\+\_\+algo}}
+\subsubsection[{\texorpdfstring{srv\+\_\+client\+\_\+user\+\_\+interface\+\_\+}{srv_client_user_interface_}}]{\setlength{\rightskip}{0pt plus 5cm}bug\+\_\+algo.\+srv\+\_\+client\+\_\+user\+\_\+interface\+\_\+ = None}\hypertarget{namespacebug__algo_a1a55011236874d9af4afcf4c3524bbf0}{}\label{namespacebug__algo_a1a55011236874d9af4afcf4c3524bbf0}
+\index{bug\+\_\+algo@{bug\+\_\+algo}!srv\+\_\+client\+\_\+user\+\_\+interface\+\_\+assignment\+\_\+@{srv\+\_\+client\+\_\+user\+\_\+interface\+\_\+assignment\+\_\+}}
+\index{srv\+\_\+client\+\_\+user\+\_\+interface\+\_\+assignment\+\_\+@{srv\+\_\+client\+\_\+user\+\_\+interface\+\_\+assignment\+\_\+}!bug\+\_\+algo@{bug\+\_\+algo}}
+\subsubsection[{\texorpdfstring{srv\+\_\+client\+\_\+user\+\_\+interface\+\_\+assignment\+\_\+}{srv_client_user_interface_assignment_}}]{\setlength{\rightskip}{0pt plus 5cm}bug\+\_\+algo.\+srv\+\_\+client\+\_\+user\+\_\+interface\+\_\+assignment\+\_\+ = None}\hypertarget{namespacebug__algo_ac9de3b470960260c4510748850446480}{}\label{namespacebug__algo_ac9de3b470960260c4510748850446480}
+\index{bug\+\_\+algo@{bug\+\_\+algo}!srv\+\_\+client\+\_\+wall\+\_\+follower\+\_\+@{srv\+\_\+client\+\_\+wall\+\_\+follower\+\_\+}}
+\index{srv\+\_\+client\+\_\+wall\+\_\+follower\+\_\+@{srv\+\_\+client\+\_\+wall\+\_\+follower\+\_\+}!bug\+\_\+algo@{bug\+\_\+algo}}
+\subsubsection[{\texorpdfstring{srv\+\_\+client\+\_\+wall\+\_\+follower\+\_\+}{srv_client_wall_follower_}}]{\setlength{\rightskip}{0pt plus 5cm}bug\+\_\+algo.\+srv\+\_\+client\+\_\+wall\+\_\+follower\+\_\+ = None}\hypertarget{namespacebug__algo_afe0f6c6a1a9bc751e4bbcae499815585}{}\label{namespacebug__algo_afe0f6c6a1a9bc751e4bbcae499815585}
+\index{bug\+\_\+algo@{bug\+\_\+algo}!start\+\_\+time@{start\+\_\+time}}
+\index{start\+\_\+time@{start\+\_\+time}!bug\+\_\+algo@{bug\+\_\+algo}}
+\subsubsection[{\texorpdfstring{start\+\_\+time}{start_time}}]{\setlength{\rightskip}{0pt plus 5cm}int bug\+\_\+algo.\+start\+\_\+time = 0}\hypertarget{namespacebug__algo_a6ff626c7bf6a4dfec4e8508d8ae5097c}{}\label{namespacebug__algo_a6ff626c7bf6a4dfec4e8508d8ae5097c}
+\index{bug\+\_\+algo@{bug\+\_\+algo}!state\+\_\+@{state\+\_\+}}
+\index{state\+\_\+@{state\+\_\+}!bug\+\_\+algo@{bug\+\_\+algo}}
+\subsubsection[{\texorpdfstring{state\+\_\+}{state_}}]{\setlength{\rightskip}{0pt plus 5cm}int bug\+\_\+algo.\+state\+\_\+ = 0}\hypertarget{namespacebug__algo_a5bf52a66b7821a097f6e653a2422748e}{}\label{namespacebug__algo_a5bf52a66b7821a097f6e653a2422748e}
+\index{bug\+\_\+algo@{bug\+\_\+algo}!state\+\_\+desc\+\_\+@{state\+\_\+desc\+\_\+}}
+\index{state\+\_\+desc\+\_\+@{state\+\_\+desc\+\_\+}!bug\+\_\+algo@{bug\+\_\+algo}}
+\subsubsection[{\texorpdfstring{state\+\_\+desc\+\_\+}{state_desc_}}]{\setlength{\rightskip}{0pt plus 5cm}list bug\+\_\+algo.\+state\+\_\+desc\+\_\+ = \mbox{[}\textquotesingle{}Go to point\textquotesingle{}, \textquotesingle{}wall following\textquotesingle{}, \textquotesingle{}stopped\textquotesingle{}\mbox{]}}\hypertarget{namespacebug__algo_a419cb7998b9a3946692fc01f5d73a25b}{}\label{namespacebug__algo_a419cb7998b9a3946692fc01f5d73a25b}
+\index{bug\+\_\+algo@{bug\+\_\+algo}!x@{x}}
+\index{x@{x}!bug\+\_\+algo@{bug\+\_\+algo}}
+\subsubsection[{\texorpdfstring{x}{x}}]{\setlength{\rightskip}{0pt plus 5cm}bug\+\_\+algo.\+x}\hypertarget{namespacebug__algo_ae006850add8691db5d752b4ccb732ac1}{}\label{namespacebug__algo_ae006850add8691db5d752b4ccb732ac1}
+\index{bug\+\_\+algo@{bug\+\_\+algo}!y@{y}}
+\index{y@{y}!bug\+\_\+algo@{bug\+\_\+algo}}
+\subsubsection[{\texorpdfstring{y}{y}}]{\setlength{\rightskip}{0pt plus 5cm}bug\+\_\+algo.\+y}\hypertarget{namespacebug__algo_a1e2d049a4b898c92454f0fb146a413ee}{}\label{namespacebug__algo_a1e2d049a4b898c92454f0fb146a413ee}
+\index{bug\+\_\+algo@{bug\+\_\+algo}!yaw\+\_\+@{yaw\+\_\+}}
+\index{yaw\+\_\+@{yaw\+\_\+}!bug\+\_\+algo@{bug\+\_\+algo}}
+\subsubsection[{\texorpdfstring{yaw\+\_\+}{yaw_}}]{\setlength{\rightskip}{0pt plus 5cm}int bug\+\_\+algo.\+yaw\+\_\+ = 0}\hypertarget{namespacebug__algo_a2c8d86dd369e86415dc7ff9c617033d7}{}\label{namespacebug__algo_a2c8d86dd369e86415dc7ff9c617033d7}
+\index{bug\+\_\+algo@{bug\+\_\+algo}!yaw\+\_\+error\+\_\+allowed\+\_\+@{yaw\+\_\+error\+\_\+allowed\+\_\+}}
+\index{yaw\+\_\+error\+\_\+allowed\+\_\+@{yaw\+\_\+error\+\_\+allowed\+\_\+}!bug\+\_\+algo@{bug\+\_\+algo}}
+\subsubsection[{\texorpdfstring{yaw\+\_\+error\+\_\+allowed\+\_\+}{yaw_error_allowed_}}]{\setlength{\rightskip}{0pt plus 5cm}int bug\+\_\+algo.\+yaw\+\_\+error\+\_\+allowed\+\_\+ = 5}\hypertarget{namespacebug__algo_a3714c955ff3cf688c84d6dc5654833d6}{}\label{namespacebug__algo_a3714c955ff3cf688c84d6dc5654833d6}
+\index{bug\+\_\+algo@{bug\+\_\+algo}!z@{z}}
+\index{z@{z}!bug\+\_\+algo@{bug\+\_\+algo}}
+\subsubsection[{\texorpdfstring{z}{z}}]{\setlength{\rightskip}{0pt plus 5cm}bug\+\_\+algo.\+z}\hypertarget{namespacebug__algo_ad9944dcf5037184fbfbe3162935d2a57}{}\label{namespacebug__algo_ad9944dcf5037184fbfbe3162935d2a57}

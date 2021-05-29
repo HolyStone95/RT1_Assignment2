@@ -1,0 +1,41 @@
+\hypertarget{wall__follower__service_8py}{}\section{scripts/wall\+\_\+follower\+\_\+service.py File Reference}
+\label{wall__follower__service_8py}\index{scripts/wall\+\_\+follower\+\_\+service.\+py@{scripts/wall\+\_\+follower\+\_\+service.\+py}}
+\subsection*{Namespaces}
+\begin{DoxyCompactItemize}
+\item 
+ \hyperlink{namespacewall__follower__service}{wall\+\_\+follower\+\_\+service}
+\item 
+ \hyperlink{namespacefinal__assignment}{final\+\_\+assignment}
+\begin{DoxyCompactList}\small\item\em This node is in charge of monitoring the state of the robot, and activate the corresping services and behaviour. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \hyperlink{namespacewall__follower__service_a215aeb1ca629241f2f875ef081b21bb3}{wall\+\_\+follower\+\_\+service.\+wall\+\_\+follower\+\_\+switch} (req)
+\begin{DoxyCompactList}\small\item\em Function activated on service request. \end{DoxyCompactList}\item 
+def \hyperlink{namespacewall__follower__service_a09e3d81acac08943a5978c52bcbbfe26}{wall\+\_\+follower\+\_\+service.\+clbk\+\_\+laser} (msg)
+\begin{DoxyCompactList}\small\item\em Laser data callback output are localized in the robot in 5 regions organized as at the bottom. \end{DoxyCompactList}\item 
+def \hyperlink{namespacewall__follower__service_a170c8a7e77b51a43f5b3edd8b0062ac4}{wall\+\_\+follower\+\_\+service.\+change\+\_\+state} (state)
+\begin{DoxyCompactList}\small\item\em Change state function. \end{DoxyCompactList}\item 
+def \hyperlink{namespacewall__follower__service_a6627caa18de98475bf401975a5a4feb1}{wall\+\_\+follower\+\_\+service.\+take\+\_\+action} ()
+\begin{DoxyCompactList}\small\item\em Take action function. \end{DoxyCompactList}\item 
+def \hyperlink{namespacewall__follower__service_a84de27c394cf900d7c30a6ab16409304}{wall\+\_\+follower\+\_\+service.\+find\+\_\+wall} ()
+\begin{DoxyCompactList}\small\item\em Function to find a wall. \end{DoxyCompactList}\item 
+def \hyperlink{namespacewall__follower__service_a242dccb66f79027a138469906f3c10e1}{wall\+\_\+follower\+\_\+service.\+turn\+\_\+left} ()
+\begin{DoxyCompactList}\small\item\em Turn left function. \end{DoxyCompactList}\item 
+def \hyperlink{namespacewall__follower__service_ac88d2c0d79a9b96805cd274c64d1bd80}{wall\+\_\+follower\+\_\+service.\+follow\+\_\+the\+\_\+wall} ()
+\begin{DoxyCompactList}\small\item\em Follow the wall function. \end{DoxyCompactList}\item 
+def \hyperlink{namespacewall__follower__service_a91670567a06ba0f2b6d453eba9471c11}{wall\+\_\+follower\+\_\+service.\+main} ()
+\begin{DoxyCompactList}\small\item\em Main function. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+bool \hyperlink{namespacewall__follower__service_acb03ef4ad62b64de43b4a4275d615e74}{wall\+\_\+follower\+\_\+service.\+active\+\_\+} = False
+\item 
+\hyperlink{namespacewall__follower__service_a2dba1ae8fd1b1af992b7872d2a7405f0}{wall\+\_\+follower\+\_\+service.\+pub\+\_\+} = None
+\item 
+dictionary \hyperlink{namespacewall__follower__service_a5becd7ef6745adb020e646fde0af14f4}{wall\+\_\+follower\+\_\+service.\+regions\+\_\+}
+\item 
+int \hyperlink{namespacewall__follower__service_a85ced827917bea830636e97f3c2e737c}{wall\+\_\+follower\+\_\+service.\+state\+\_\+} = 0
+\item 
+dictionary \hyperlink{namespacewall__follower__service_ad1235d309f9ac4c61a2c58c70b7e4895}{wall\+\_\+follower\+\_\+service.\+state\+\_\+dict\+\_\+}
+\end{DoxyCompactItemize}

@@ -1,0 +1,77 @@
+\hypertarget{namespacebig__user__interface}{}\section{big\+\_\+user\+\_\+interface Namespace Reference}
+\label{namespacebig__user__interface}\index{big\+\_\+user\+\_\+interface@{big\+\_\+user\+\_\+interface}}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \hyperlink{namespacebig__user__interface_a76119123837eb23b6351dfa51682c794}{random\+\_\+trgt} (minimum, maximum)
+\begin{DoxyCompactList}\small\item\em F\+Unction for setting a desired position. \end{DoxyCompactList}\item 
+def \hyperlink{namespacebig__user__interface_a681a3a84ae63765bf0d5e1ea19486d57}{assignment} (req)
+\begin{DoxyCompactList}\small\item\em Function to assign a new behaviour to the robot. \end{DoxyCompactList}\item 
+def \hyperlink{namespacebig__user__interface_ad2af43c69156cede1e27c973c8193d9c}{main} ()
+\begin{DoxyCompactList}\small\item\em Main function. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Function Documentation}
+\index{big\+\_\+user\+\_\+interface@{big\+\_\+user\+\_\+interface}!assignment@{assignment}}
+\index{assignment@{assignment}!big\+\_\+user\+\_\+interface@{big\+\_\+user\+\_\+interface}}
+\subsubsection[{\texorpdfstring{assignment(req)}{assignment(req)}}]{\setlength{\rightskip}{0pt plus 5cm}def big\+\_\+user\+\_\+interface.\+assignment (
+\begin{DoxyParamCaption}
+\item[{}]{req}
+\end{DoxyParamCaption}
+)}\hypertarget{namespacebig__user__interface_a681a3a84ae63765bf0d5e1ea19486d57}{}\label{namespacebig__user__interface_a681a3a84ae63765bf0d5e1ea19486d57}
+
+
+Function to assign a new behaviour to the robot. 
+
+Asks the user to insert a new desired behaviour and sets the parameters for the next change in state 
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacebig__user__interface_a681a3a84ae63765bf0d5e1ea19486d57_cgraph}
+\end{center}
+\end{figure}
+
+
+\index{big\+\_\+user\+\_\+interface@{big\+\_\+user\+\_\+interface}!main@{main}}
+\index{main@{main}!big\+\_\+user\+\_\+interface@{big\+\_\+user\+\_\+interface}}
+\subsubsection[{\texorpdfstring{main()}{main()}}]{\setlength{\rightskip}{0pt plus 5cm}def big\+\_\+user\+\_\+interface.\+main (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{namespacebig__user__interface_ad2af43c69156cede1e27c973c8193d9c}{}\label{namespacebig__user__interface_ad2af43c69156cede1e27c973c8193d9c}
+
+
+Main function. 
+
+Initializes the service server for user\+\_\+interface\+\_\+assignments \index{big\+\_\+user\+\_\+interface@{big\+\_\+user\+\_\+interface}!random\+\_\+trgt@{random\+\_\+trgt}}
+\index{random\+\_\+trgt@{random\+\_\+trgt}!big\+\_\+user\+\_\+interface@{big\+\_\+user\+\_\+interface}}
+\subsubsection[{\texorpdfstring{random\+\_\+trgt(minimum, maximum)}{random_trgt(minimum, maximum)}}]{\setlength{\rightskip}{0pt plus 5cm}def big\+\_\+user\+\_\+interface.\+random\+\_\+trgt (
+\begin{DoxyParamCaption}
+\item[{}]{minimum, }
+\item[{}]{maximum}
+\end{DoxyParamCaption}
+)}\hypertarget{namespacebig__user__interface_a76119123837eb23b6351dfa51682c794}{}\label{namespacebig__user__interface_a76119123837eb23b6351dfa51682c794}
+
+
+F\+Unction for setting a desired position. 
+
+the six possible positions has been enumerated from 1 to 6 set the parameters of desired position according to the number that has been extracted. minimun and maximum are 1 and 6 for random target but since I use this function also to set the position when is the user to select one of the six, in this case minumum=maximum 
+\begin{DoxyParams}{Parameters}
+{\em minimum} & minimum of the range \\
+\hline
+{\em maximum} & maximum of the range \\
+\hline
+\end{DoxyParams}
+
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacebig__user__interface_a76119123837eb23b6351dfa51682c794_icgraph}
+\end{center}
+\end{figure}
+
+

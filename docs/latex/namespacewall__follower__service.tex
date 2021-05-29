@@ -1,0 +1,254 @@
+\hypertarget{namespacewall__follower__service}{}\section{wall\+\_\+follower\+\_\+service Namespace Reference}
+\label{namespacewall__follower__service}\index{wall\+\_\+follower\+\_\+service@{wall\+\_\+follower\+\_\+service}}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \hyperlink{namespacewall__follower__service_a215aeb1ca629241f2f875ef081b21bb3}{wall\+\_\+follower\+\_\+switch} (req)
+\begin{DoxyCompactList}\small\item\em Function activated on service request. \end{DoxyCompactList}\item 
+def \hyperlink{namespacewall__follower__service_a09e3d81acac08943a5978c52bcbbfe26}{clbk\+\_\+laser} (msg)
+\begin{DoxyCompactList}\small\item\em Laser data callback output are localized in the robot in 5 regions organized as at the bottom. \end{DoxyCompactList}\item 
+def \hyperlink{namespacewall__follower__service_a170c8a7e77b51a43f5b3edd8b0062ac4}{change\+\_\+state} (state)
+\begin{DoxyCompactList}\small\item\em Change state function. \end{DoxyCompactList}\item 
+def \hyperlink{namespacewall__follower__service_a6627caa18de98475bf401975a5a4feb1}{take\+\_\+action} ()
+\begin{DoxyCompactList}\small\item\em Take action function. \end{DoxyCompactList}\item 
+def \hyperlink{namespacewall__follower__service_a84de27c394cf900d7c30a6ab16409304}{find\+\_\+wall} ()
+\begin{DoxyCompactList}\small\item\em Function to find a wall. \end{DoxyCompactList}\item 
+def \hyperlink{namespacewall__follower__service_a242dccb66f79027a138469906f3c10e1}{turn\+\_\+left} ()
+\begin{DoxyCompactList}\small\item\em Turn left function. \end{DoxyCompactList}\item 
+def \hyperlink{namespacewall__follower__service_ac88d2c0d79a9b96805cd274c64d1bd80}{follow\+\_\+the\+\_\+wall} ()
+\begin{DoxyCompactList}\small\item\em Follow the wall function. \end{DoxyCompactList}\item 
+def \hyperlink{namespacewall__follower__service_a91670567a06ba0f2b6d453eba9471c11}{main} ()
+\begin{DoxyCompactList}\small\item\em Main function. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+bool \hyperlink{namespacewall__follower__service_acb03ef4ad62b64de43b4a4275d615e74}{active\+\_\+} = False
+\item 
+\hyperlink{namespacewall__follower__service_a2dba1ae8fd1b1af992b7872d2a7405f0}{pub\+\_\+} = None
+\item 
+dictionary \hyperlink{namespacewall__follower__service_a5becd7ef6745adb020e646fde0af14f4}{regions\+\_\+}
+\item 
+int \hyperlink{namespacewall__follower__service_a85ced827917bea830636e97f3c2e737c}{state\+\_\+} = 0
+\item 
+dictionary \hyperlink{namespacewall__follower__service_ad1235d309f9ac4c61a2c58c70b7e4895}{state\+\_\+dict\+\_\+}
+\end{DoxyCompactItemize}
+
+
+\subsection{Function Documentation}
+\index{wall\+\_\+follower\+\_\+service@{wall\+\_\+follower\+\_\+service}!change\+\_\+state@{change\+\_\+state}}
+\index{change\+\_\+state@{change\+\_\+state}!wall\+\_\+follower\+\_\+service@{wall\+\_\+follower\+\_\+service}}
+\subsubsection[{\texorpdfstring{change\+\_\+state(state)}{change_state(state)}}]{\setlength{\rightskip}{0pt plus 5cm}def wall\+\_\+follower\+\_\+service.\+change\+\_\+state (
+\begin{DoxyParamCaption}
+\item[{}]{state}
+\end{DoxyParamCaption}
+)}\hypertarget{namespacewall__follower__service_a170c8a7e77b51a43f5b3edd8b0062ac4}{}\label{namespacewall__follower__service_a170c8a7e77b51a43f5b3edd8b0062ac4}
+
+
+Change state function. 
+
+manage the change of status of the robot 
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacewall__follower__service_a170c8a7e77b51a43f5b3edd8b0062ac4_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{wall\+\_\+follower\+\_\+service@{wall\+\_\+follower\+\_\+service}!clbk\+\_\+laser@{clbk\+\_\+laser}}
+\index{clbk\+\_\+laser@{clbk\+\_\+laser}!wall\+\_\+follower\+\_\+service@{wall\+\_\+follower\+\_\+service}}
+\subsubsection[{\texorpdfstring{clbk\+\_\+laser(msg)}{clbk_laser(msg)}}]{\setlength{\rightskip}{0pt plus 5cm}def wall\+\_\+follower\+\_\+service.\+clbk\+\_\+laser (
+\begin{DoxyParamCaption}
+\item[{}]{msg}
+\end{DoxyParamCaption}
+)}\hypertarget{namespacewall__follower__service_a09e3d81acac08943a5978c52bcbbfe26}{}\label{namespacewall__follower__service_a09e3d81acac08943a5978c52bcbbfe26}
+
+
+Laser data callback output are localized in the robot in 5 regions organized as at the bottom. 
+
+variable regions\+\_\+ separes the output of lasers 
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacewall__follower__service_a09e3d81acac08943a5978c52bcbbfe26_cgraph}
+\end{center}
+\end{figure}
+
+
+\index{wall\+\_\+follower\+\_\+service@{wall\+\_\+follower\+\_\+service}!find\+\_\+wall@{find\+\_\+wall}}
+\index{find\+\_\+wall@{find\+\_\+wall}!wall\+\_\+follower\+\_\+service@{wall\+\_\+follower\+\_\+service}}
+\subsubsection[{\texorpdfstring{find\+\_\+wall()}{find_wall()}}]{\setlength{\rightskip}{0pt plus 5cm}def wall\+\_\+follower\+\_\+service.\+find\+\_\+wall (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{namespacewall__follower__service_a84de27c394cf900d7c30a6ab16409304}{}\label{namespacewall__follower__service_a84de27c394cf900d7c30a6ab16409304}
+
+
+Function to find a wall. 
+
+randomly searches for walls 
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacewall__follower__service_a84de27c394cf900d7c30a6ab16409304_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{wall\+\_\+follower\+\_\+service@{wall\+\_\+follower\+\_\+service}!follow\+\_\+the\+\_\+wall@{follow\+\_\+the\+\_\+wall}}
+\index{follow\+\_\+the\+\_\+wall@{follow\+\_\+the\+\_\+wall}!wall\+\_\+follower\+\_\+service@{wall\+\_\+follower\+\_\+service}}
+\subsubsection[{\texorpdfstring{follow\+\_\+the\+\_\+wall()}{follow_the_wall()}}]{\setlength{\rightskip}{0pt plus 5cm}def wall\+\_\+follower\+\_\+service.\+follow\+\_\+the\+\_\+wall (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{namespacewall__follower__service_ac88d2c0d79a9b96805cd274c64d1bd80}{}\label{namespacewall__follower__service_ac88d2c0d79a9b96805cd274c64d1bd80}
+
+
+Follow the wall function. 
+
+
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacewall__follower__service_ac88d2c0d79a9b96805cd274c64d1bd80_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{wall\+\_\+follower\+\_\+service@{wall\+\_\+follower\+\_\+service}!main@{main}}
+\index{main@{main}!wall\+\_\+follower\+\_\+service@{wall\+\_\+follower\+\_\+service}}
+\subsubsection[{\texorpdfstring{main()}{main()}}]{\setlength{\rightskip}{0pt plus 5cm}def wall\+\_\+follower\+\_\+service.\+main (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{namespacewall__follower__service_a91670567a06ba0f2b6d453eba9471c11}{}\label{namespacewall__follower__service_a91670567a06ba0f2b6d453eba9471c11}
+
+
+Main function. 
+
+initializes necessary variables, works as a state machine 
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacewall__follower__service_a91670567a06ba0f2b6d453eba9471c11_cgraph}
+\end{center}
+\end{figure}
+
+
+\index{wall\+\_\+follower\+\_\+service@{wall\+\_\+follower\+\_\+service}!take\+\_\+action@{take\+\_\+action}}
+\index{take\+\_\+action@{take\+\_\+action}!wall\+\_\+follower\+\_\+service@{wall\+\_\+follower\+\_\+service}}
+\subsubsection[{\texorpdfstring{take\+\_\+action()}{take_action()}}]{\setlength{\rightskip}{0pt plus 5cm}def wall\+\_\+follower\+\_\+service.\+take\+\_\+action (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{namespacewall__follower__service_a6627caa18de98475bf401975a5a4feb1}{}\label{namespacewall__follower__service_a6627caa18de98475bf401975a5a4feb1}
+
+
+Take action function. 
+
+checks the output of laser for knowing where are the position of wall with respect to oriantation and position of robot the robot change state according where wall are 
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacewall__follower__service_a6627caa18de98475bf401975a5a4feb1_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacewall__follower__service_a6627caa18de98475bf401975a5a4feb1_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{wall\+\_\+follower\+\_\+service@{wall\+\_\+follower\+\_\+service}!turn\+\_\+left@{turn\+\_\+left}}
+\index{turn\+\_\+left@{turn\+\_\+left}!wall\+\_\+follower\+\_\+service@{wall\+\_\+follower\+\_\+service}}
+\subsubsection[{\texorpdfstring{turn\+\_\+left()}{turn_left()}}]{\setlength{\rightskip}{0pt plus 5cm}def wall\+\_\+follower\+\_\+service.\+turn\+\_\+left (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{namespacewall__follower__service_a242dccb66f79027a138469906f3c10e1}{}\label{namespacewall__follower__service_a242dccb66f79027a138469906f3c10e1}
+
+
+Turn left function. 
+
+
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacewall__follower__service_a242dccb66f79027a138469906f3c10e1_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{wall\+\_\+follower\+\_\+service@{wall\+\_\+follower\+\_\+service}!wall\+\_\+follower\+\_\+switch@{wall\+\_\+follower\+\_\+switch}}
+\index{wall\+\_\+follower\+\_\+switch@{wall\+\_\+follower\+\_\+switch}!wall\+\_\+follower\+\_\+service@{wall\+\_\+follower\+\_\+service}}
+\subsubsection[{\texorpdfstring{wall\+\_\+follower\+\_\+switch(req)}{wall_follower_switch(req)}}]{\setlength{\rightskip}{0pt plus 5cm}def wall\+\_\+follower\+\_\+service.\+wall\+\_\+follower\+\_\+switch (
+\begin{DoxyParamCaption}
+\item[{}]{req}
+\end{DoxyParamCaption}
+)}\hypertarget{namespacewall__follower__service_a215aeb1ca629241f2f875ef081b21bb3}{}\label{namespacewall__follower__service_a215aeb1ca629241f2f875ef081b21bb3}
+
+
+Function activated on service request. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em req} & is the request of the service \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Variable Documentation}
+\index{wall\+\_\+follower\+\_\+service@{wall\+\_\+follower\+\_\+service}!active\+\_\+@{active\+\_\+}}
+\index{active\+\_\+@{active\+\_\+}!wall\+\_\+follower\+\_\+service@{wall\+\_\+follower\+\_\+service}}
+\subsubsection[{\texorpdfstring{active\+\_\+}{active_}}]{\setlength{\rightskip}{0pt plus 5cm}bool wall\+\_\+follower\+\_\+service.\+active\+\_\+ = False}\hypertarget{namespacewall__follower__service_acb03ef4ad62b64de43b4a4275d615e74}{}\label{namespacewall__follower__service_acb03ef4ad62b64de43b4a4275d615e74}
+\index{wall\+\_\+follower\+\_\+service@{wall\+\_\+follower\+\_\+service}!pub\+\_\+@{pub\+\_\+}}
+\index{pub\+\_\+@{pub\+\_\+}!wall\+\_\+follower\+\_\+service@{wall\+\_\+follower\+\_\+service}}
+\subsubsection[{\texorpdfstring{pub\+\_\+}{pub_}}]{\setlength{\rightskip}{0pt plus 5cm}wall\+\_\+follower\+\_\+service.\+pub\+\_\+ = None}\hypertarget{namespacewall__follower__service_a2dba1ae8fd1b1af992b7872d2a7405f0}{}\label{namespacewall__follower__service_a2dba1ae8fd1b1af992b7872d2a7405f0}
+\index{wall\+\_\+follower\+\_\+service@{wall\+\_\+follower\+\_\+service}!regions\+\_\+@{regions\+\_\+}}
+\index{regions\+\_\+@{regions\+\_\+}!wall\+\_\+follower\+\_\+service@{wall\+\_\+follower\+\_\+service}}
+\subsubsection[{\texorpdfstring{regions\+\_\+}{regions_}}]{\setlength{\rightskip}{0pt plus 5cm}dictionary wall\+\_\+follower\+\_\+service.\+regions\+\_\+}\hypertarget{namespacewall__follower__service_a5becd7ef6745adb020e646fde0af14f4}{}\label{namespacewall__follower__service_a5becd7ef6745adb020e646fde0af14f4}
+{\bfseries Initial value\+:}
+\begin{DoxyCode}
+1 = \{
+2     \textcolor{stringliteral}{'right'}: 0,
+3     \textcolor{stringliteral}{'fright'}: 0,
+4     \textcolor{stringliteral}{'front'}: 0,
+5     \textcolor{stringliteral}{'fleft'}: 0,
+6     \textcolor{stringliteral}{'left'}: 0,
+7 \}
+\end{DoxyCode}
+\index{wall\+\_\+follower\+\_\+service@{wall\+\_\+follower\+\_\+service}!state\+\_\+@{state\+\_\+}}
+\index{state\+\_\+@{state\+\_\+}!wall\+\_\+follower\+\_\+service@{wall\+\_\+follower\+\_\+service}}
+\subsubsection[{\texorpdfstring{state\+\_\+}{state_}}]{\setlength{\rightskip}{0pt plus 5cm}int wall\+\_\+follower\+\_\+service.\+state\+\_\+ = 0}\hypertarget{namespacewall__follower__service_a85ced827917bea830636e97f3c2e737c}{}\label{namespacewall__follower__service_a85ced827917bea830636e97f3c2e737c}
+\index{wall\+\_\+follower\+\_\+service@{wall\+\_\+follower\+\_\+service}!state\+\_\+dict\+\_\+@{state\+\_\+dict\+\_\+}}
+\index{state\+\_\+dict\+\_\+@{state\+\_\+dict\+\_\+}!wall\+\_\+follower\+\_\+service@{wall\+\_\+follower\+\_\+service}}
+\subsubsection[{\texorpdfstring{state\+\_\+dict\+\_\+}{state_dict_}}]{\setlength{\rightskip}{0pt plus 5cm}dictionary wall\+\_\+follower\+\_\+service.\+state\+\_\+dict\+\_\+}\hypertarget{namespacewall__follower__service_ad1235d309f9ac4c61a2c58c70b7e4895}{}\label{namespacewall__follower__service_ad1235d309f9ac4c61a2c58c70b7e4895}
+{\bfseries Initial value\+:}
+\begin{DoxyCode}
+1 = \{
+2     0: \textcolor{stringliteral}{'find the wall'},
+3     1: \textcolor{stringliteral}{'turn left'},
+4     2: \textcolor{stringliteral}{'follow the wall'},
+5 \}
+\end{DoxyCode}

@@ -1,0 +1,256 @@
+\hypertarget{namespacebig__brain}{}\section{big\+\_\+brain Namespace Reference}
+\label{namespacebig__brain}\index{big\+\_\+brain@{big\+\_\+brain}}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \hyperlink{namespacebig__brain_a815c120863ef1a5db7bf743bc9bb6f54}{clbk\+\_\+odom} (msg)
+\begin{DoxyCompactList}\small\item\em Callback for keeping track of robot pose. \end{DoxyCompactList}\item 
+def \hyperlink{namespacebig__brain_adfc26e0690fd9fe893e09be5400a8b7d}{distance} ()
+\begin{DoxyCompactList}\small\item\em Function for computing the distance from the robot actual position to the desired position. \end{DoxyCompactList}\item 
+def \hyperlink{namespacebig__brain_a4f091a106e4ba678afd9bc2df4f2789b}{new\+\_\+goal} ()
+\begin{DoxyCompactList}\small\item\em Function for setting a new target with a Move\+Base\+Action\+Goal msg on topic /movebase/goal. \end{DoxyCompactList}\item 
+def \hyperlink{namespacebig__brain_a108d0111d106a89cde8da1c2f494ab3c}{change\+\_\+state} (state)
+\begin{DoxyCompactList}\small\item\em Function for changing the state of the robot. \end{DoxyCompactList}\item 
+def \hyperlink{namespacebig__brain_a06516fa995f70f4013ee893ae15c5cea}{main} ()
+\begin{DoxyCompactList}\small\item\em Main function. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{namespacebig__brain_a9f12d1c3982160fe18122c7a2c4aa860}{twist\+\_\+pub} = None
+\begin{DoxyCompactList}\small\item\em Publisher that publishes on /cmd\+\_\+vel to stop the robot when entering in state of \textquotesingle{}stop\textquotesingle{}. \end{DoxyCompactList}\item 
+\hyperlink{namespacebig__brain_a757b56b184f850f2599be2279ac94777}{mvgoal\+\_\+pub} = None
+\begin{DoxyCompactList}\small\item\em Publisher that publish a Move\+Base\+Action\+Goal msg on /move\+\_\+base/goal to make the robot reach the goal. \end{DoxyCompactList}\item 
+\hyperlink{namespacebig__brain_acbbe2e86c0b737f0caaff69ce22b4aa8}{mvcancel\+\_\+pub} = None
+\begin{DoxyCompactList}\small\item\em Publisher that publish a Goal\+ID msg on /move\+\_\+base/cancel to cancel a previous goal. \end{DoxyCompactList}\item 
+\hyperlink{namespacebig__brain_a954157b5770aed51dc667611f39855b0}{srv\+\_\+client\+\_\+wall\+\_\+follower\+\_\+} = None
+\begin{DoxyCompactList}\small\item\em Client for activating the service for wall following behaviour. \end{DoxyCompactList}\item 
+\hyperlink{namespacebig__brain_a946162ac048b8df1f02003b37bd96812}{srv\+\_\+client\+\_\+user\+\_\+interface\+\_\+assignment\+\_\+} = None
+\begin{DoxyCompactList}\small\item\em Client for activating the service calling the user main user interface. \end{DoxyCompactList}\item 
+\hyperlink{namespacebig__brain_a60d3104e99b35d213a90529c7bc5a573}{srv\+\_\+client\+\_\+bug\+\_\+algorithm\+\_\+} = None
+\begin{DoxyCompactList}\small\item\em C\+Lient for activating the bug navigation behaviour. \end{DoxyCompactList}\item 
+\hyperlink{namespacebig__brain_a463bcdb8c7ed9954756492cdce9a43e2}{position\+\_\+} = Point()
+\begin{DoxyCompactList}\small\item\em Variable containing position of the robot. \end{DoxyCompactList}\item 
+\hyperlink{namespacebig__brain_a5f0f2fbee791fd60caa7a9dcf6ca1e00}{regions\+\_\+} = None
+\begin{DoxyCompactList}\small\item\em Variables for controlling laser data. \end{DoxyCompactList}\item 
+int \hyperlink{namespacebig__brain_ac43f9e8255d9b336a4f3ebe4dc3d2246}{change\+\_\+} = 0
+\begin{DoxyCompactList}\small\item\em Variable for checking if a new state has been issued. \end{DoxyCompactList}\item 
+list \hyperlink{namespacebig__brain_ab730e09c9bd7f5c7a1c09a8ea55a9029}{state\+\_\+desc\+\_\+} = \mbox{[}\textquotesingle{}random target\textquotesingle{}, \textquotesingle{}get target\textquotesingle{}, \textquotesingle{}wall fallowing\textquotesingle{},\textquotesingle{}stop\textquotesingle{},\textquotesingle{}bug\textquotesingle{}\mbox{]}
+\begin{DoxyCompactList}\small\item\em States of the robot definiton. \end{DoxyCompactList}\item 
+int \hyperlink{namespacebig__brain_a95db081b16847592a7981a7205e66358}{state\+\_\+} = 0
+\begin{DoxyCompactList}\small\item\em Variable cointaining the actual state of the robot. \end{DoxyCompactList}\item 
+int \hyperlink{namespacebig__brain_a28f405a0651539e59bd455a35ab07a3c}{newstate\+\_\+} = 0
+\begin{DoxyCompactList}\small\item\em Variable containing the new state of the robot. \end{DoxyCompactList}\item 
+int \hyperlink{namespacebig__brain_a82350019fe3047e74222abd0d6b07c14}{user\+\_\+} = 0
+\begin{DoxyCompactList}\small\item\em Variable to control the different user interface when the behaviour is switched to bug. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Function Documentation}
+\index{big\+\_\+brain@{big\+\_\+brain}!change\+\_\+state@{change\+\_\+state}}
+\index{change\+\_\+state@{change\+\_\+state}!big\+\_\+brain@{big\+\_\+brain}}
+\subsubsection[{\texorpdfstring{change\+\_\+state(state)}{change_state(state)}}]{\setlength{\rightskip}{0pt plus 5cm}def big\+\_\+brain.\+change\+\_\+state (
+\begin{DoxyParamCaption}
+\item[{}]{state}
+\end{DoxyParamCaption}
+)}\hypertarget{namespacebig__brain_a108d0111d106a89cde8da1c2f494ab3c}{}\label{namespacebig__brain_a108d0111d106a89cde8da1c2f494ab3c}
+
+
+Function for changing the state of the robot. 
+
+This function changes the state of the robot activating the various services and the respectfull operations set only the request for service for first behaviour to True Set wall follow and bug algorithm behaviour to false call new goal for setting the new target 
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacebig__brain_a108d0111d106a89cde8da1c2f494ab3c_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=331pt]{namespacebig__brain_a108d0111d106a89cde8da1c2f494ab3c_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{big\+\_\+brain@{big\+\_\+brain}!clbk\+\_\+odom@{clbk\+\_\+odom}}
+\index{clbk\+\_\+odom@{clbk\+\_\+odom}!big\+\_\+brain@{big\+\_\+brain}}
+\subsubsection[{\texorpdfstring{clbk\+\_\+odom(msg)}{clbk_odom(msg)}}]{\setlength{\rightskip}{0pt plus 5cm}def big\+\_\+brain.\+clbk\+\_\+odom (
+\begin{DoxyParamCaption}
+\item[{}]{msg}
+\end{DoxyParamCaption}
+)}\hypertarget{namespacebig__brain_a815c120863ef1a5db7bf743bc9bb6f54}{}\label{namespacebig__brain_a815c120863ef1a5db7bf743bc9bb6f54}
+
+
+Callback for keeping track of robot pose. 
+
+Callback for subscriber of /odom for checking robot pose. 
+\begin{DoxyParams}{Parameters}
+{\em msg} & geometry\+\_\+msgs/\+Odometry \\
+\hline
+\end{DoxyParams}
+\index{big\+\_\+brain@{big\+\_\+brain}!distance@{distance}}
+\index{distance@{distance}!big\+\_\+brain@{big\+\_\+brain}}
+\subsubsection[{\texorpdfstring{distance()}{distance()}}]{\setlength{\rightskip}{0pt plus 5cm}def big\+\_\+brain.\+distance (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{namespacebig__brain_adfc26e0690fd9fe893e09be5400a8b7d}{}\label{namespacebig__brain_adfc26e0690fd9fe893e09be5400a8b7d}
+
+
+Function for computing the distance from the robot actual position to the desired position. 
+
+
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=307pt]{namespacebig__brain_adfc26e0690fd9fe893e09be5400a8b7d_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{big\+\_\+brain@{big\+\_\+brain}!main@{main}}
+\index{main@{main}!big\+\_\+brain@{big\+\_\+brain}}
+\subsubsection[{\texorpdfstring{main()}{main()}}]{\setlength{\rightskip}{0pt plus 5cm}def big\+\_\+brain.\+main (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{namespacebig__brain_a06516fa995f70f4013ee893ae15c5cea}{}\label{namespacebig__brain_a06516fa995f70f4013ee893ae15c5cea}
+
+
+Main function. 
+
+initializes necessary variables, works as a state machine 
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacebig__brain_a06516fa995f70f4013ee893ae15c5cea_cgraph}
+\end{center}
+\end{figure}
+
+
+\index{big\+\_\+brain@{big\+\_\+brain}!new\+\_\+goal@{new\+\_\+goal}}
+\index{new\+\_\+goal@{new\+\_\+goal}!big\+\_\+brain@{big\+\_\+brain}}
+\subsubsection[{\texorpdfstring{new\+\_\+goal()}{new_goal()}}]{\setlength{\rightskip}{0pt plus 5cm}def big\+\_\+brain.\+new\+\_\+goal (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{namespacebig__brain_a4f091a106e4ba678afd9bc2df4f2789b}{}\label{namespacebig__brain_a4f091a106e4ba678afd9bc2df4f2789b}
+
+
+Function for setting a new target with a Move\+Base\+Action\+Goal msg on topic /movebase/goal. 
+
+
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacebig__brain_a4f091a106e4ba678afd9bc2df4f2789b_icgraph}
+\end{center}
+\end{figure}
+
+
+
+
+\subsection{Variable Documentation}
+\index{big\+\_\+brain@{big\+\_\+brain}!change\+\_\+@{change\+\_\+}}
+\index{change\+\_\+@{change\+\_\+}!big\+\_\+brain@{big\+\_\+brain}}
+\subsubsection[{\texorpdfstring{change\+\_\+}{change_}}]{\setlength{\rightskip}{0pt plus 5cm}int big\+\_\+brain.\+change\+\_\+ = 0}\hypertarget{namespacebig__brain_ac43f9e8255d9b336a4f3ebe4dc3d2246}{}\label{namespacebig__brain_ac43f9e8255d9b336a4f3ebe4dc3d2246}
+
+
+Variable for checking if a new state has been issued. 
+
+\index{big\+\_\+brain@{big\+\_\+brain}!mvcancel\+\_\+pub@{mvcancel\+\_\+pub}}
+\index{mvcancel\+\_\+pub@{mvcancel\+\_\+pub}!big\+\_\+brain@{big\+\_\+brain}}
+\subsubsection[{\texorpdfstring{mvcancel\+\_\+pub}{mvcancel_pub}}]{\setlength{\rightskip}{0pt plus 5cm}big\+\_\+brain.\+mvcancel\+\_\+pub = None}\hypertarget{namespacebig__brain_acbbe2e86c0b737f0caaff69ce22b4aa8}{}\label{namespacebig__brain_acbbe2e86c0b737f0caaff69ce22b4aa8}
+
+
+Publisher that publish a Goal\+ID msg on /move\+\_\+base/cancel to cancel a previous goal. 
+
+\index{big\+\_\+brain@{big\+\_\+brain}!mvgoal\+\_\+pub@{mvgoal\+\_\+pub}}
+\index{mvgoal\+\_\+pub@{mvgoal\+\_\+pub}!big\+\_\+brain@{big\+\_\+brain}}
+\subsubsection[{\texorpdfstring{mvgoal\+\_\+pub}{mvgoal_pub}}]{\setlength{\rightskip}{0pt plus 5cm}big\+\_\+brain.\+mvgoal\+\_\+pub = None}\hypertarget{namespacebig__brain_a757b56b184f850f2599be2279ac94777}{}\label{namespacebig__brain_a757b56b184f850f2599be2279ac94777}
+
+
+Publisher that publish a Move\+Base\+Action\+Goal msg on /move\+\_\+base/goal to make the robot reach the goal. 
+
+\index{big\+\_\+brain@{big\+\_\+brain}!newstate\+\_\+@{newstate\+\_\+}}
+\index{newstate\+\_\+@{newstate\+\_\+}!big\+\_\+brain@{big\+\_\+brain}}
+\subsubsection[{\texorpdfstring{newstate\+\_\+}{newstate_}}]{\setlength{\rightskip}{0pt plus 5cm}int big\+\_\+brain.\+newstate\+\_\+ = 0}\hypertarget{namespacebig__brain_a28f405a0651539e59bd455a35ab07a3c}{}\label{namespacebig__brain_a28f405a0651539e59bd455a35ab07a3c}
+
+
+Variable containing the new state of the robot. 
+
+\index{big\+\_\+brain@{big\+\_\+brain}!position\+\_\+@{position\+\_\+}}
+\index{position\+\_\+@{position\+\_\+}!big\+\_\+brain@{big\+\_\+brain}}
+\subsubsection[{\texorpdfstring{position\+\_\+}{position_}}]{\setlength{\rightskip}{0pt plus 5cm}big\+\_\+brain.\+position\+\_\+ = Point()}\hypertarget{namespacebig__brain_a463bcdb8c7ed9954756492cdce9a43e2}{}\label{namespacebig__brain_a463bcdb8c7ed9954756492cdce9a43e2}
+
+
+Variable containing position of the robot. 
+
+\index{big\+\_\+brain@{big\+\_\+brain}!regions\+\_\+@{regions\+\_\+}}
+\index{regions\+\_\+@{regions\+\_\+}!big\+\_\+brain@{big\+\_\+brain}}
+\subsubsection[{\texorpdfstring{regions\+\_\+}{regions_}}]{\setlength{\rightskip}{0pt plus 5cm}big\+\_\+brain.\+regions\+\_\+ = None}\hypertarget{namespacebig__brain_a5f0f2fbee791fd60caa7a9dcf6ca1e00}{}\label{namespacebig__brain_a5f0f2fbee791fd60caa7a9dcf6ca1e00}
+
+
+Variables for controlling laser data. 
+
+\index{big\+\_\+brain@{big\+\_\+brain}!srv\+\_\+client\+\_\+bug\+\_\+algorithm\+\_\+@{srv\+\_\+client\+\_\+bug\+\_\+algorithm\+\_\+}}
+\index{srv\+\_\+client\+\_\+bug\+\_\+algorithm\+\_\+@{srv\+\_\+client\+\_\+bug\+\_\+algorithm\+\_\+}!big\+\_\+brain@{big\+\_\+brain}}
+\subsubsection[{\texorpdfstring{srv\+\_\+client\+\_\+bug\+\_\+algorithm\+\_\+}{srv_client_bug_algorithm_}}]{\setlength{\rightskip}{0pt plus 5cm}big\+\_\+brain.\+srv\+\_\+client\+\_\+bug\+\_\+algorithm\+\_\+ = None}\hypertarget{namespacebig__brain_a60d3104e99b35d213a90529c7bc5a573}{}\label{namespacebig__brain_a60d3104e99b35d213a90529c7bc5a573}
+
+
+C\+Lient for activating the bug navigation behaviour. 
+
+\index{big\+\_\+brain@{big\+\_\+brain}!srv\+\_\+client\+\_\+user\+\_\+interface\+\_\+assignment\+\_\+@{srv\+\_\+client\+\_\+user\+\_\+interface\+\_\+assignment\+\_\+}}
+\index{srv\+\_\+client\+\_\+user\+\_\+interface\+\_\+assignment\+\_\+@{srv\+\_\+client\+\_\+user\+\_\+interface\+\_\+assignment\+\_\+}!big\+\_\+brain@{big\+\_\+brain}}
+\subsubsection[{\texorpdfstring{srv\+\_\+client\+\_\+user\+\_\+interface\+\_\+assignment\+\_\+}{srv_client_user_interface_assignment_}}]{\setlength{\rightskip}{0pt plus 5cm}big\+\_\+brain.\+srv\+\_\+client\+\_\+user\+\_\+interface\+\_\+assignment\+\_\+ = None}\hypertarget{namespacebig__brain_a946162ac048b8df1f02003b37bd96812}{}\label{namespacebig__brain_a946162ac048b8df1f02003b37bd96812}
+
+
+Client for activating the service calling the user main user interface. 
+
+\index{big\+\_\+brain@{big\+\_\+brain}!srv\+\_\+client\+\_\+wall\+\_\+follower\+\_\+@{srv\+\_\+client\+\_\+wall\+\_\+follower\+\_\+}}
+\index{srv\+\_\+client\+\_\+wall\+\_\+follower\+\_\+@{srv\+\_\+client\+\_\+wall\+\_\+follower\+\_\+}!big\+\_\+brain@{big\+\_\+brain}}
+\subsubsection[{\texorpdfstring{srv\+\_\+client\+\_\+wall\+\_\+follower\+\_\+}{srv_client_wall_follower_}}]{\setlength{\rightskip}{0pt plus 5cm}big\+\_\+brain.\+srv\+\_\+client\+\_\+wall\+\_\+follower\+\_\+ = None}\hypertarget{namespacebig__brain_a954157b5770aed51dc667611f39855b0}{}\label{namespacebig__brain_a954157b5770aed51dc667611f39855b0}
+
+
+Client for activating the service for wall following behaviour. 
+
+\index{big\+\_\+brain@{big\+\_\+brain}!state\+\_\+@{state\+\_\+}}
+\index{state\+\_\+@{state\+\_\+}!big\+\_\+brain@{big\+\_\+brain}}
+\subsubsection[{\texorpdfstring{state\+\_\+}{state_}}]{\setlength{\rightskip}{0pt plus 5cm}int big\+\_\+brain.\+state\+\_\+ = 0}\hypertarget{namespacebig__brain_a95db081b16847592a7981a7205e66358}{}\label{namespacebig__brain_a95db081b16847592a7981a7205e66358}
+
+
+Variable cointaining the actual state of the robot. 
+
+\index{big\+\_\+brain@{big\+\_\+brain}!state\+\_\+desc\+\_\+@{state\+\_\+desc\+\_\+}}
+\index{state\+\_\+desc\+\_\+@{state\+\_\+desc\+\_\+}!big\+\_\+brain@{big\+\_\+brain}}
+\subsubsection[{\texorpdfstring{state\+\_\+desc\+\_\+}{state_desc_}}]{\setlength{\rightskip}{0pt plus 5cm}list big\+\_\+brain.\+state\+\_\+desc\+\_\+ = \mbox{[}\textquotesingle{}random target\textquotesingle{}, \textquotesingle{}get target\textquotesingle{}, \textquotesingle{}wall fallowing\textquotesingle{},\textquotesingle{}stop\textquotesingle{},\textquotesingle{}bug\textquotesingle{}\mbox{]}}\hypertarget{namespacebig__brain_ab730e09c9bd7f5c7a1c09a8ea55a9029}{}\label{namespacebig__brain_ab730e09c9bd7f5c7a1c09a8ea55a9029}
+
+
+States of the robot definiton. 
+
+\index{big\+\_\+brain@{big\+\_\+brain}!twist\+\_\+pub@{twist\+\_\+pub}}
+\index{twist\+\_\+pub@{twist\+\_\+pub}!big\+\_\+brain@{big\+\_\+brain}}
+\subsubsection[{\texorpdfstring{twist\+\_\+pub}{twist_pub}}]{\setlength{\rightskip}{0pt plus 5cm}big\+\_\+brain.\+twist\+\_\+pub = None}\hypertarget{namespacebig__brain_a9f12d1c3982160fe18122c7a2c4aa860}{}\label{namespacebig__brain_a9f12d1c3982160fe18122c7a2c4aa860}
+
+
+Publisher that publishes on /cmd\+\_\+vel to stop the robot when entering in state of \textquotesingle{}stop\textquotesingle{}. 
+
+\index{big\+\_\+brain@{big\+\_\+brain}!user\+\_\+@{user\+\_\+}}
+\index{user\+\_\+@{user\+\_\+}!big\+\_\+brain@{big\+\_\+brain}}
+\subsubsection[{\texorpdfstring{user\+\_\+}{user_}}]{\setlength{\rightskip}{0pt plus 5cm}int big\+\_\+brain.\+user\+\_\+ = 0}\hypertarget{namespacebig__brain_a82350019fe3047e74222abd0d6b07c14}{}\label{namespacebig__brain_a82350019fe3047e74222abd0d6b07c14}
+
+
+Variable to control the different user interface when the behaviour is switched to bug. 
+

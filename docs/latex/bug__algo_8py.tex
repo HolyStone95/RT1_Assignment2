@@ -1,0 +1,65 @@
+\hypertarget{bug__algo_8py}{}\section{scripts/bug\+\_\+algo.py File Reference}
+\label{bug__algo_8py}\index{scripts/bug\+\_\+algo.\+py@{scripts/bug\+\_\+algo.\+py}}
+\subsection*{Namespaces}
+\begin{DoxyCompactItemize}
+\item 
+ \hyperlink{namespacebug__algo}{bug\+\_\+algo}
+\item 
+ \hyperlink{namespacefinal__assignment}{final\+\_\+assignment}
+\begin{DoxyCompactList}\small\item\em This node is in charge of monitoring the state of the robot, and activate the corresping services and behaviour. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \hyperlink{namespacebug__algo_a6a72a118f8a289bf80b1fe79487b273f}{bug\+\_\+algo.\+clbk\+\_\+odom} (msg)
+\begin{DoxyCompactList}\small\item\em Function to retrieve robot pose. \end{DoxyCompactList}\item 
+def \hyperlink{namespacebug__algo_a4363ca4faa041280e958c5141bc3bde8}{bug\+\_\+algo.\+clbk\+\_\+laser} (msg)
+\begin{DoxyCompactList}\small\item\em Laser data callback. \end{DoxyCompactList}\item 
+def \hyperlink{namespacebug__algo_afe2965502b3ec1efdb6ac2dadfb9a5de}{bug\+\_\+algo.\+bug\+\_\+algorithm\+\_\+srv} (req)
+\begin{DoxyCompactList}\small\item\em Function activated on service request. \end{DoxyCompactList}\item 
+def \hyperlink{namespacebug__algo_aca287deda75aa8d0f790135ef47b6a16}{bug\+\_\+algo.\+change\+\_\+state} (state)
+\begin{DoxyCompactList}\small\item\em Change state function. \end{DoxyCompactList}\item 
+def \hyperlink{namespacebug__algo_ae499da57d8d88a30b64054480fdb60c8}{bug\+\_\+algo.\+normalize\+\_\+angle} (angle)
+\begin{DoxyCompactList}\small\item\em Normalize angle function. \end{DoxyCompactList}\item 
+def \hyperlink{namespacebug__algo_a8df2ef2049aa935d5478597523b50dcb}{bug\+\_\+algo.\+main} ()
+\begin{DoxyCompactList}\small\item\em Main function. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+bool \hyperlink{namespacebug__algo_a3bec537d2bfc115b0a14ee6bad41bd00}{bug\+\_\+algo.\+active\+\_\+} = False
+\item 
+int \hyperlink{namespacebug__algo_a6ff626c7bf6a4dfec4e8508d8ae5097c}{bug\+\_\+algo.\+start\+\_\+time} = 0
+\item 
+int \hyperlink{namespacebug__algo_af723ba0d909555b34934483c74e06818}{bug\+\_\+algo.\+elapsed\+\_\+time} = 0
+\item 
+int \hyperlink{namespacebug__algo_af9e77fe7842316d1491ef585c7602710}{bug\+\_\+algo.\+actual\+\_\+time} = 0
+\item 
+\hyperlink{namespacebug__algo_a17a7504f2f0f6714f6ac31a43107fc31}{bug\+\_\+algo.\+pub} = None
+\item 
+\hyperlink{namespacebug__algo_a52e8d210b667d955534f12f59f191eb3}{bug\+\_\+algo.\+srv\+\_\+client\+\_\+go\+\_\+to\+\_\+point\+\_\+} = None
+\item 
+\hyperlink{namespacebug__algo_afe0f6c6a1a9bc751e4bbcae499815585}{bug\+\_\+algo.\+srv\+\_\+client\+\_\+wall\+\_\+follower\+\_\+} = None
+\item 
+\hyperlink{namespacebug__algo_a1a55011236874d9af4afcf4c3524bbf0}{bug\+\_\+algo.\+srv\+\_\+client\+\_\+user\+\_\+interface\+\_\+} = None
+\item 
+\hyperlink{namespacebug__algo_ac9de3b470960260c4510748850446480}{bug\+\_\+algo.\+srv\+\_\+client\+\_\+user\+\_\+interface\+\_\+assignment\+\_\+} = None
+\item 
+int \hyperlink{namespacebug__algo_a2c8d86dd369e86415dc7ff9c617033d7}{bug\+\_\+algo.\+yaw\+\_\+} = 0
+\item 
+int \hyperlink{namespacebug__algo_a3714c955ff3cf688c84d6dc5654833d6}{bug\+\_\+algo.\+yaw\+\_\+error\+\_\+allowed\+\_\+} = 5
+\item 
+\hyperlink{namespacebug__algo_ac0035ad008802f966f437b4787365220}{bug\+\_\+algo.\+position\+\_\+} = Point()
+\item 
+\hyperlink{namespacebug__algo_a6bc76d9dd5213819c8287c8833f8f3bd}{bug\+\_\+algo.\+desired\+\_\+position\+\_\+} = Point()
+\item 
+\hyperlink{namespacebug__algo_ae006850add8691db5d752b4ccb732ac1}{bug\+\_\+algo.\+x}
+\item 
+\hyperlink{namespacebug__algo_a1e2d049a4b898c92454f0fb146a413ee}{bug\+\_\+algo.\+y}
+\item 
+\hyperlink{namespacebug__algo_ad9944dcf5037184fbfbe3162935d2a57}{bug\+\_\+algo.\+z}
+\item 
+\hyperlink{namespacebug__algo_a31fd6300649f8a600eb87ebed00b174f}{bug\+\_\+algo.\+regions\+\_\+} = None
+\item 
+list \hyperlink{namespacebug__algo_a419cb7998b9a3946692fc01f5d73a25b}{bug\+\_\+algo.\+state\+\_\+desc\+\_\+} = \mbox{[}\textquotesingle{}Go to point\textquotesingle{}, \textquotesingle{}wall following\textquotesingle{}, \textquotesingle{}stopped\textquotesingle{}\mbox{]}
+\item 
+int \hyperlink{namespacebug__algo_a5bf52a66b7821a097f6e653a2422748e}{bug\+\_\+algo.\+state\+\_\+} = 0
+\end{DoxyCompactItemize}

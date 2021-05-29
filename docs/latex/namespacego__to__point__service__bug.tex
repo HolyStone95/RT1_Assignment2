@@ -1,0 +1,307 @@
+\hypertarget{namespacego__to__point__service__bug}{}\section{go\+\_\+to\+\_\+point\+\_\+service\+\_\+bug Namespace Reference}
+\label{namespacego__to__point__service__bug}\index{go\+\_\+to\+\_\+point\+\_\+service\+\_\+bug@{go\+\_\+to\+\_\+point\+\_\+service\+\_\+bug}}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \hyperlink{namespacego__to__point__service__bug_a66835918820d392cf39cc1e3b28497ee}{go\+\_\+to\+\_\+point\+\_\+switch} (req)
+\begin{DoxyCompactList}\small\item\em Function activated on service request. \end{DoxyCompactList}\item 
+def \hyperlink{namespacego__to__point__service__bug_acc2367a3fc6946e8ea518d82a018dcd7}{clbk\+\_\+odom} (msg)
+\begin{DoxyCompactList}\small\item\em Function to retrieve robot pose. \end{DoxyCompactList}\item 
+def \hyperlink{namespacego__to__point__service__bug_a99587ca3714f1c59523a0fccdb4acc7d}{change\+\_\+state} (state)
+\begin{DoxyCompactList}\small\item\em Change state function. \end{DoxyCompactList}\item 
+def \hyperlink{namespacego__to__point__service__bug_a3ff83aec5e0de49fa33f2d33681d2a49}{normalize\+\_\+angle} (angle)
+\begin{DoxyCompactList}\small\item\em Normalize angle function. \end{DoxyCompactList}\item 
+def \hyperlink{namespacego__to__point__service__bug_a0f4f965c49e3e20c6442b10bf41e2533}{fix\+\_\+yaw} (des\+\_\+pos)
+\begin{DoxyCompactList}\small\item\em Fix Yah function. \end{DoxyCompactList}\item 
+def \hyperlink{namespacego__to__point__service__bug_a78a4659fd178f90a4b0acb3a4da0fbc1}{go\+\_\+straight\+\_\+ahead} (des\+\_\+pos)
+\begin{DoxyCompactList}\small\item\em Go straight function. \end{DoxyCompactList}\item 
+def \hyperlink{namespacego__to__point__service__bug_a181271bc83dc620614c43e6bd6b18db8}{done} (des\+\_\+pos)
+\begin{DoxyCompactList}\small\item\em Done function. \end{DoxyCompactList}\item 
+def \hyperlink{namespacego__to__point__service__bug_abb5a5a69905cef8ab5baf0768056ecea}{main} ()
+\begin{DoxyCompactList}\small\item\em Main function. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+bool \hyperlink{namespacego__to__point__service__bug_a904337d36bd7e3e63dc3d862b0f67608}{active\+\_\+} = False
+\item 
+\hyperlink{namespacego__to__point__service__bug_a8eccd57782f5a63758c2ed6fc429648f}{position\+\_\+} = Point()
+\item 
+int \hyperlink{namespacego__to__point__service__bug_a92ae1b18b13762d59aa27dd83ea9e04d}{yaw\+\_\+} = 0
+\item 
+int \hyperlink{namespacego__to__point__service__bug_acf82697453e220209d6f386e1630619a}{state\+\_\+} = 0
+\item 
+\hyperlink{namespacego__to__point__service__bug_a5c33b74b7f2376e73690f8474fc4db36}{desired\+\_\+position\+\_\+} = Point()
+\item 
+\hyperlink{namespacego__to__point__service__bug_a6761dc57b29d40d3e6578b775a1e84c2}{x}
+\item 
+\hyperlink{namespacego__to__point__service__bug_a9eac097a440f4f16c9e7260e5296fd76}{y}
+\item 
+\hyperlink{namespacego__to__point__service__bug_ac72a9ad64f48ea907c94e25a3718372c}{z}
+\item 
+int \hyperlink{namespacego__to__point__service__bug_aa27745ad563c25adbac628695bbdd44d}{yaw\+\_\+precision\+\_\+} = math.\+pi/9
+\item 
+int \hyperlink{namespacego__to__point__service__bug_a2cfb8eb9d839627bee23494c162a1e88}{yaw\+\_\+precision\+\_\+2\+\_\+} = math.\+pi/90
+\item 
+float \hyperlink{namespacego__to__point__service__bug_a1142014aa3b5c0819cd183c7b4534927}{dist\+\_\+precision\+\_\+} = 0.\+3
+\item 
+float \hyperlink{namespacego__to__point__service__bug_ab4d1411316c963d5b211e42f78cf3c93}{kp\+\_\+a} = 3.\+0
+\item 
+float \hyperlink{namespacego__to__point__service__bug_a0aa73d2814be9d22fc2a6e4eaa0afc07}{kp\+\_\+d} = 0.\+2
+\item 
+float \hyperlink{namespacego__to__point__service__bug_aa2cfb37c171e32902af10e4f4121f92f}{ub\+\_\+a} = 0.\+6
+\item 
+float \hyperlink{namespacego__to__point__service__bug_a60404a026e5fcd840f8a6f712edfb71f}{lb\+\_\+a} = -\/0.\+5
+\item 
+float \hyperlink{namespacego__to__point__service__bug_a0ea364ac6b209e590e96109ca6fb7a5c}{ub\+\_\+d} = 0.\+6
+\item 
+\hyperlink{namespacego__to__point__service__bug_a303812c1ccf752e711d273e93c27293d}{pub} = None
+\end{DoxyCompactItemize}
+
+
+\subsection{Function Documentation}
+\index{go\+\_\+to\+\_\+point\+\_\+service\+\_\+bug@{go\+\_\+to\+\_\+point\+\_\+service\+\_\+bug}!change\+\_\+state@{change\+\_\+state}}
+\index{change\+\_\+state@{change\+\_\+state}!go\+\_\+to\+\_\+point\+\_\+service\+\_\+bug@{go\+\_\+to\+\_\+point\+\_\+service\+\_\+bug}}
+\subsubsection[{\texorpdfstring{change\+\_\+state(state)}{change_state(state)}}]{\setlength{\rightskip}{0pt plus 5cm}def go\+\_\+to\+\_\+point\+\_\+service\+\_\+bug.\+change\+\_\+state (
+\begin{DoxyParamCaption}
+\item[{}]{state}
+\end{DoxyParamCaption}
+)}\hypertarget{namespacego__to__point__service__bug_a99587ca3714f1c59523a0fccdb4acc7d}{}\label{namespacego__to__point__service__bug_a99587ca3714f1c59523a0fccdb4acc7d}
+
+
+Change state function. 
+
+manage the change of status of the robot 
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacego__to__point__service__bug_a99587ca3714f1c59523a0fccdb4acc7d_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{go\+\_\+to\+\_\+point\+\_\+service\+\_\+bug@{go\+\_\+to\+\_\+point\+\_\+service\+\_\+bug}!clbk\+\_\+odom@{clbk\+\_\+odom}}
+\index{clbk\+\_\+odom@{clbk\+\_\+odom}!go\+\_\+to\+\_\+point\+\_\+service\+\_\+bug@{go\+\_\+to\+\_\+point\+\_\+service\+\_\+bug}}
+\subsubsection[{\texorpdfstring{clbk\+\_\+odom(msg)}{clbk_odom(msg)}}]{\setlength{\rightskip}{0pt plus 5cm}def go\+\_\+to\+\_\+point\+\_\+service\+\_\+bug.\+clbk\+\_\+odom (
+\begin{DoxyParamCaption}
+\item[{}]{msg}
+\end{DoxyParamCaption}
+)}\hypertarget{namespacego__to__point__service__bug_acc2367a3fc6946e8ea518d82a018dcd7}{}\label{namespacego__to__point__service__bug_acc2367a3fc6946e8ea518d82a018dcd7}
+
+
+Function to retrieve robot pose. 
+
+it\textquotesingle{}s the callback for the subscriber on topic /odom \index{go\+\_\+to\+\_\+point\+\_\+service\+\_\+bug@{go\+\_\+to\+\_\+point\+\_\+service\+\_\+bug}!done@{done}}
+\index{done@{done}!go\+\_\+to\+\_\+point\+\_\+service\+\_\+bug@{go\+\_\+to\+\_\+point\+\_\+service\+\_\+bug}}
+\subsubsection[{\texorpdfstring{done(des\+\_\+pos)}{done(des_pos)}}]{\setlength{\rightskip}{0pt plus 5cm}def go\+\_\+to\+\_\+point\+\_\+service\+\_\+bug.\+done (
+\begin{DoxyParamCaption}
+\item[{}]{des\+\_\+pos}
+\end{DoxyParamCaption}
+)}\hypertarget{namespacego__to__point__service__bug_a181271bc83dc620614c43e6bd6b18db8}{}\label{namespacego__to__point__service__bug_a181271bc83dc620614c43e6bd6b18db8}
+
+
+Done function. 
+
+stops the robot once it has reached a goal 
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=340pt]{namespacego__to__point__service__bug_a181271bc83dc620614c43e6bd6b18db8_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=340pt]{namespacego__to__point__service__bug_a181271bc83dc620614c43e6bd6b18db8_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{go\+\_\+to\+\_\+point\+\_\+service\+\_\+bug@{go\+\_\+to\+\_\+point\+\_\+service\+\_\+bug}!fix\+\_\+yaw@{fix\+\_\+yaw}}
+\index{fix\+\_\+yaw@{fix\+\_\+yaw}!go\+\_\+to\+\_\+point\+\_\+service\+\_\+bug@{go\+\_\+to\+\_\+point\+\_\+service\+\_\+bug}}
+\subsubsection[{\texorpdfstring{fix\+\_\+yaw(des\+\_\+pos)}{fix_yaw(des_pos)}}]{\setlength{\rightskip}{0pt plus 5cm}def go\+\_\+to\+\_\+point\+\_\+service\+\_\+bug.\+fix\+\_\+yaw (
+\begin{DoxyParamCaption}
+\item[{}]{des\+\_\+pos}
+\end{DoxyParamCaption}
+)}\hypertarget{namespacego__to__point__service__bug_a0f4f965c49e3e20c6442b10bf41e2533}{}\label{namespacego__to__point__service__bug_a0f4f965c49e3e20c6442b10bf41e2533}
+
+
+Fix Yah function. 
+
+fixes the orientation of the robot 
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacego__to__point__service__bug_a0f4f965c49e3e20c6442b10bf41e2533_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=340pt]{namespacego__to__point__service__bug_a0f4f965c49e3e20c6442b10bf41e2533_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{go\+\_\+to\+\_\+point\+\_\+service\+\_\+bug@{go\+\_\+to\+\_\+point\+\_\+service\+\_\+bug}!go\+\_\+straight\+\_\+ahead@{go\+\_\+straight\+\_\+ahead}}
+\index{go\+\_\+straight\+\_\+ahead@{go\+\_\+straight\+\_\+ahead}!go\+\_\+to\+\_\+point\+\_\+service\+\_\+bug@{go\+\_\+to\+\_\+point\+\_\+service\+\_\+bug}}
+\subsubsection[{\texorpdfstring{go\+\_\+straight\+\_\+ahead(des\+\_\+pos)}{go_straight_ahead(des_pos)}}]{\setlength{\rightskip}{0pt plus 5cm}def go\+\_\+to\+\_\+point\+\_\+service\+\_\+bug.\+go\+\_\+straight\+\_\+ahead (
+\begin{DoxyParamCaption}
+\item[{}]{des\+\_\+pos}
+\end{DoxyParamCaption}
+)}\hypertarget{namespacego__to__point__service__bug_a78a4659fd178f90a4b0acb3a4da0fbc1}{}\label{namespacego__to__point__service__bug_a78a4659fd178f90a4b0acb3a4da0fbc1}
+
+
+Go straight function. 
+
+publishes on cmd\+\_\+vel to make the robot go straight 
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacego__to__point__service__bug_a78a4659fd178f90a4b0acb3a4da0fbc1_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacego__to__point__service__bug_a78a4659fd178f90a4b0acb3a4da0fbc1_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{go\+\_\+to\+\_\+point\+\_\+service\+\_\+bug@{go\+\_\+to\+\_\+point\+\_\+service\+\_\+bug}!go\+\_\+to\+\_\+point\+\_\+switch@{go\+\_\+to\+\_\+point\+\_\+switch}}
+\index{go\+\_\+to\+\_\+point\+\_\+switch@{go\+\_\+to\+\_\+point\+\_\+switch}!go\+\_\+to\+\_\+point\+\_\+service\+\_\+bug@{go\+\_\+to\+\_\+point\+\_\+service\+\_\+bug}}
+\subsubsection[{\texorpdfstring{go\+\_\+to\+\_\+point\+\_\+switch(req)}{go_to_point_switch(req)}}]{\setlength{\rightskip}{0pt plus 5cm}def go\+\_\+to\+\_\+point\+\_\+service\+\_\+bug.\+go\+\_\+to\+\_\+point\+\_\+switch (
+\begin{DoxyParamCaption}
+\item[{}]{req}
+\end{DoxyParamCaption}
+)}\hypertarget{namespacego__to__point__service__bug_a66835918820d392cf39cc1e3b28497ee}{}\label{namespacego__to__point__service__bug_a66835918820d392cf39cc1e3b28497ee}
+
+
+Function activated on service request. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em req} & is the request of the service \\
+\hline
+\end{DoxyParams}
+\index{go\+\_\+to\+\_\+point\+\_\+service\+\_\+bug@{go\+\_\+to\+\_\+point\+\_\+service\+\_\+bug}!main@{main}}
+\index{main@{main}!go\+\_\+to\+\_\+point\+\_\+service\+\_\+bug@{go\+\_\+to\+\_\+point\+\_\+service\+\_\+bug}}
+\subsubsection[{\texorpdfstring{main()}{main()}}]{\setlength{\rightskip}{0pt plus 5cm}def go\+\_\+to\+\_\+point\+\_\+service\+\_\+bug.\+main (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{namespacego__to__point__service__bug_abb5a5a69905cef8ab5baf0768056ecea}{}\label{namespacego__to__point__service__bug_abb5a5a69905cef8ab5baf0768056ecea}
+
+
+Main function. 
+
+initializes necessary variables, works as a state machine 
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacego__to__point__service__bug_abb5a5a69905cef8ab5baf0768056ecea_cgraph}
+\end{center}
+\end{figure}
+
+
+\index{go\+\_\+to\+\_\+point\+\_\+service\+\_\+bug@{go\+\_\+to\+\_\+point\+\_\+service\+\_\+bug}!normalize\+\_\+angle@{normalize\+\_\+angle}}
+\index{normalize\+\_\+angle@{normalize\+\_\+angle}!go\+\_\+to\+\_\+point\+\_\+service\+\_\+bug@{go\+\_\+to\+\_\+point\+\_\+service\+\_\+bug}}
+\subsubsection[{\texorpdfstring{normalize\+\_\+angle(angle)}{normalize_angle(angle)}}]{\setlength{\rightskip}{0pt plus 5cm}def go\+\_\+to\+\_\+point\+\_\+service\+\_\+bug.\+normalize\+\_\+angle (
+\begin{DoxyParamCaption}
+\item[{}]{angle}
+\end{DoxyParamCaption}
+)}\hypertarget{namespacego__to__point__service__bug_a3ff83aec5e0de49fa33f2d33681d2a49}{}\label{namespacego__to__point__service__bug_a3ff83aec5e0de49fa33f2d33681d2a49}
+
+
+Normalize angle function. 
+
+normalizes an angle 
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacego__to__point__service__bug_a3ff83aec5e0de49fa33f2d33681d2a49_icgraph}
+\end{center}
+\end{figure}
+
+
+
+
+\subsection{Variable Documentation}
+\index{go\+\_\+to\+\_\+point\+\_\+service\+\_\+bug@{go\+\_\+to\+\_\+point\+\_\+service\+\_\+bug}!active\+\_\+@{active\+\_\+}}
+\index{active\+\_\+@{active\+\_\+}!go\+\_\+to\+\_\+point\+\_\+service\+\_\+bug@{go\+\_\+to\+\_\+point\+\_\+service\+\_\+bug}}
+\subsubsection[{\texorpdfstring{active\+\_\+}{active_}}]{\setlength{\rightskip}{0pt plus 5cm}bool go\+\_\+to\+\_\+point\+\_\+service\+\_\+bug.\+active\+\_\+ = False}\hypertarget{namespacego__to__point__service__bug_a904337d36bd7e3e63dc3d862b0f67608}{}\label{namespacego__to__point__service__bug_a904337d36bd7e3e63dc3d862b0f67608}
+\index{go\+\_\+to\+\_\+point\+\_\+service\+\_\+bug@{go\+\_\+to\+\_\+point\+\_\+service\+\_\+bug}!desired\+\_\+position\+\_\+@{desired\+\_\+position\+\_\+}}
+\index{desired\+\_\+position\+\_\+@{desired\+\_\+position\+\_\+}!go\+\_\+to\+\_\+point\+\_\+service\+\_\+bug@{go\+\_\+to\+\_\+point\+\_\+service\+\_\+bug}}
+\subsubsection[{\texorpdfstring{desired\+\_\+position\+\_\+}{desired_position_}}]{\setlength{\rightskip}{0pt plus 5cm}go\+\_\+to\+\_\+point\+\_\+service\+\_\+bug.\+desired\+\_\+position\+\_\+ = Point()}\hypertarget{namespacego__to__point__service__bug_a5c33b74b7f2376e73690f8474fc4db36}{}\label{namespacego__to__point__service__bug_a5c33b74b7f2376e73690f8474fc4db36}
+\index{go\+\_\+to\+\_\+point\+\_\+service\+\_\+bug@{go\+\_\+to\+\_\+point\+\_\+service\+\_\+bug}!dist\+\_\+precision\+\_\+@{dist\+\_\+precision\+\_\+}}
+\index{dist\+\_\+precision\+\_\+@{dist\+\_\+precision\+\_\+}!go\+\_\+to\+\_\+point\+\_\+service\+\_\+bug@{go\+\_\+to\+\_\+point\+\_\+service\+\_\+bug}}
+\subsubsection[{\texorpdfstring{dist\+\_\+precision\+\_\+}{dist_precision_}}]{\setlength{\rightskip}{0pt plus 5cm}float go\+\_\+to\+\_\+point\+\_\+service\+\_\+bug.\+dist\+\_\+precision\+\_\+ = 0.\+3}\hypertarget{namespacego__to__point__service__bug_a1142014aa3b5c0819cd183c7b4534927}{}\label{namespacego__to__point__service__bug_a1142014aa3b5c0819cd183c7b4534927}
+\index{go\+\_\+to\+\_\+point\+\_\+service\+\_\+bug@{go\+\_\+to\+\_\+point\+\_\+service\+\_\+bug}!kp\+\_\+a@{kp\+\_\+a}}
+\index{kp\+\_\+a@{kp\+\_\+a}!go\+\_\+to\+\_\+point\+\_\+service\+\_\+bug@{go\+\_\+to\+\_\+point\+\_\+service\+\_\+bug}}
+\subsubsection[{\texorpdfstring{kp\+\_\+a}{kp_a}}]{\setlength{\rightskip}{0pt plus 5cm}float go\+\_\+to\+\_\+point\+\_\+service\+\_\+bug.\+kp\+\_\+a = 3.\+0}\hypertarget{namespacego__to__point__service__bug_ab4d1411316c963d5b211e42f78cf3c93}{}\label{namespacego__to__point__service__bug_ab4d1411316c963d5b211e42f78cf3c93}
+\index{go\+\_\+to\+\_\+point\+\_\+service\+\_\+bug@{go\+\_\+to\+\_\+point\+\_\+service\+\_\+bug}!kp\+\_\+d@{kp\+\_\+d}}
+\index{kp\+\_\+d@{kp\+\_\+d}!go\+\_\+to\+\_\+point\+\_\+service\+\_\+bug@{go\+\_\+to\+\_\+point\+\_\+service\+\_\+bug}}
+\subsubsection[{\texorpdfstring{kp\+\_\+d}{kp_d}}]{\setlength{\rightskip}{0pt plus 5cm}float go\+\_\+to\+\_\+point\+\_\+service\+\_\+bug.\+kp\+\_\+d = 0.\+2}\hypertarget{namespacego__to__point__service__bug_a0aa73d2814be9d22fc2a6e4eaa0afc07}{}\label{namespacego__to__point__service__bug_a0aa73d2814be9d22fc2a6e4eaa0afc07}
+\index{go\+\_\+to\+\_\+point\+\_\+service\+\_\+bug@{go\+\_\+to\+\_\+point\+\_\+service\+\_\+bug}!lb\+\_\+a@{lb\+\_\+a}}
+\index{lb\+\_\+a@{lb\+\_\+a}!go\+\_\+to\+\_\+point\+\_\+service\+\_\+bug@{go\+\_\+to\+\_\+point\+\_\+service\+\_\+bug}}
+\subsubsection[{\texorpdfstring{lb\+\_\+a}{lb_a}}]{\setlength{\rightskip}{0pt plus 5cm}float go\+\_\+to\+\_\+point\+\_\+service\+\_\+bug.\+lb\+\_\+a = -\/0.\+5}\hypertarget{namespacego__to__point__service__bug_a60404a026e5fcd840f8a6f712edfb71f}{}\label{namespacego__to__point__service__bug_a60404a026e5fcd840f8a6f712edfb71f}
+\index{go\+\_\+to\+\_\+point\+\_\+service\+\_\+bug@{go\+\_\+to\+\_\+point\+\_\+service\+\_\+bug}!position\+\_\+@{position\+\_\+}}
+\index{position\+\_\+@{position\+\_\+}!go\+\_\+to\+\_\+point\+\_\+service\+\_\+bug@{go\+\_\+to\+\_\+point\+\_\+service\+\_\+bug}}
+\subsubsection[{\texorpdfstring{position\+\_\+}{position_}}]{\setlength{\rightskip}{0pt plus 5cm}go\+\_\+to\+\_\+point\+\_\+service\+\_\+bug.\+position\+\_\+ = Point()}\hypertarget{namespacego__to__point__service__bug_a8eccd57782f5a63758c2ed6fc429648f}{}\label{namespacego__to__point__service__bug_a8eccd57782f5a63758c2ed6fc429648f}
+\index{go\+\_\+to\+\_\+point\+\_\+service\+\_\+bug@{go\+\_\+to\+\_\+point\+\_\+service\+\_\+bug}!pub@{pub}}
+\index{pub@{pub}!go\+\_\+to\+\_\+point\+\_\+service\+\_\+bug@{go\+\_\+to\+\_\+point\+\_\+service\+\_\+bug}}
+\subsubsection[{\texorpdfstring{pub}{pub}}]{\setlength{\rightskip}{0pt plus 5cm}go\+\_\+to\+\_\+point\+\_\+service\+\_\+bug.\+pub = None}\hypertarget{namespacego__to__point__service__bug_a303812c1ccf752e711d273e93c27293d}{}\label{namespacego__to__point__service__bug_a303812c1ccf752e711d273e93c27293d}
+\index{go\+\_\+to\+\_\+point\+\_\+service\+\_\+bug@{go\+\_\+to\+\_\+point\+\_\+service\+\_\+bug}!state\+\_\+@{state\+\_\+}}
+\index{state\+\_\+@{state\+\_\+}!go\+\_\+to\+\_\+point\+\_\+service\+\_\+bug@{go\+\_\+to\+\_\+point\+\_\+service\+\_\+bug}}
+\subsubsection[{\texorpdfstring{state\+\_\+}{state_}}]{\setlength{\rightskip}{0pt plus 5cm}int go\+\_\+to\+\_\+point\+\_\+service\+\_\+bug.\+state\+\_\+ = 0}\hypertarget{namespacego__to__point__service__bug_acf82697453e220209d6f386e1630619a}{}\label{namespacego__to__point__service__bug_acf82697453e220209d6f386e1630619a}
+\index{go\+\_\+to\+\_\+point\+\_\+service\+\_\+bug@{go\+\_\+to\+\_\+point\+\_\+service\+\_\+bug}!ub\+\_\+a@{ub\+\_\+a}}
+\index{ub\+\_\+a@{ub\+\_\+a}!go\+\_\+to\+\_\+point\+\_\+service\+\_\+bug@{go\+\_\+to\+\_\+point\+\_\+service\+\_\+bug}}
+\subsubsection[{\texorpdfstring{ub\+\_\+a}{ub_a}}]{\setlength{\rightskip}{0pt plus 5cm}float go\+\_\+to\+\_\+point\+\_\+service\+\_\+bug.\+ub\+\_\+a = 0.\+6}\hypertarget{namespacego__to__point__service__bug_aa2cfb37c171e32902af10e4f4121f92f}{}\label{namespacego__to__point__service__bug_aa2cfb37c171e32902af10e4f4121f92f}
+\index{go\+\_\+to\+\_\+point\+\_\+service\+\_\+bug@{go\+\_\+to\+\_\+point\+\_\+service\+\_\+bug}!ub\+\_\+d@{ub\+\_\+d}}
+\index{ub\+\_\+d@{ub\+\_\+d}!go\+\_\+to\+\_\+point\+\_\+service\+\_\+bug@{go\+\_\+to\+\_\+point\+\_\+service\+\_\+bug}}
+\subsubsection[{\texorpdfstring{ub\+\_\+d}{ub_d}}]{\setlength{\rightskip}{0pt plus 5cm}float go\+\_\+to\+\_\+point\+\_\+service\+\_\+bug.\+ub\+\_\+d = 0.\+6}\hypertarget{namespacego__to__point__service__bug_a0ea364ac6b209e590e96109ca6fb7a5c}{}\label{namespacego__to__point__service__bug_a0ea364ac6b209e590e96109ca6fb7a5c}
+\index{go\+\_\+to\+\_\+point\+\_\+service\+\_\+bug@{go\+\_\+to\+\_\+point\+\_\+service\+\_\+bug}!x@{x}}
+\index{x@{x}!go\+\_\+to\+\_\+point\+\_\+service\+\_\+bug@{go\+\_\+to\+\_\+point\+\_\+service\+\_\+bug}}
+\subsubsection[{\texorpdfstring{x}{x}}]{\setlength{\rightskip}{0pt plus 5cm}go\+\_\+to\+\_\+point\+\_\+service\+\_\+bug.\+x}\hypertarget{namespacego__to__point__service__bug_a6761dc57b29d40d3e6578b775a1e84c2}{}\label{namespacego__to__point__service__bug_a6761dc57b29d40d3e6578b775a1e84c2}
+\index{go\+\_\+to\+\_\+point\+\_\+service\+\_\+bug@{go\+\_\+to\+\_\+point\+\_\+service\+\_\+bug}!y@{y}}
+\index{y@{y}!go\+\_\+to\+\_\+point\+\_\+service\+\_\+bug@{go\+\_\+to\+\_\+point\+\_\+service\+\_\+bug}}
+\subsubsection[{\texorpdfstring{y}{y}}]{\setlength{\rightskip}{0pt plus 5cm}go\+\_\+to\+\_\+point\+\_\+service\+\_\+bug.\+y}\hypertarget{namespacego__to__point__service__bug_a9eac097a440f4f16c9e7260e5296fd76}{}\label{namespacego__to__point__service__bug_a9eac097a440f4f16c9e7260e5296fd76}
+\index{go\+\_\+to\+\_\+point\+\_\+service\+\_\+bug@{go\+\_\+to\+\_\+point\+\_\+service\+\_\+bug}!yaw\+\_\+@{yaw\+\_\+}}
+\index{yaw\+\_\+@{yaw\+\_\+}!go\+\_\+to\+\_\+point\+\_\+service\+\_\+bug@{go\+\_\+to\+\_\+point\+\_\+service\+\_\+bug}}
+\subsubsection[{\texorpdfstring{yaw\+\_\+}{yaw_}}]{\setlength{\rightskip}{0pt plus 5cm}int go\+\_\+to\+\_\+point\+\_\+service\+\_\+bug.\+yaw\+\_\+ = 0}\hypertarget{namespacego__to__point__service__bug_a92ae1b18b13762d59aa27dd83ea9e04d}{}\label{namespacego__to__point__service__bug_a92ae1b18b13762d59aa27dd83ea9e04d}
+\index{go\+\_\+to\+\_\+point\+\_\+service\+\_\+bug@{go\+\_\+to\+\_\+point\+\_\+service\+\_\+bug}!yaw\+\_\+precision\+\_\+@{yaw\+\_\+precision\+\_\+}}
+\index{yaw\+\_\+precision\+\_\+@{yaw\+\_\+precision\+\_\+}!go\+\_\+to\+\_\+point\+\_\+service\+\_\+bug@{go\+\_\+to\+\_\+point\+\_\+service\+\_\+bug}}
+\subsubsection[{\texorpdfstring{yaw\+\_\+precision\+\_\+}{yaw_precision_}}]{\setlength{\rightskip}{0pt plus 5cm}int go\+\_\+to\+\_\+point\+\_\+service\+\_\+bug.\+yaw\+\_\+precision\+\_\+ = math.\+pi/9}\hypertarget{namespacego__to__point__service__bug_aa27745ad563c25adbac628695bbdd44d}{}\label{namespacego__to__point__service__bug_aa27745ad563c25adbac628695bbdd44d}
+\index{go\+\_\+to\+\_\+point\+\_\+service\+\_\+bug@{go\+\_\+to\+\_\+point\+\_\+service\+\_\+bug}!yaw\+\_\+precision\+\_\+2\+\_\+@{yaw\+\_\+precision\+\_\+2\+\_\+}}
+\index{yaw\+\_\+precision\+\_\+2\+\_\+@{yaw\+\_\+precision\+\_\+2\+\_\+}!go\+\_\+to\+\_\+point\+\_\+service\+\_\+bug@{go\+\_\+to\+\_\+point\+\_\+service\+\_\+bug}}
+\subsubsection[{\texorpdfstring{yaw\+\_\+precision\+\_\+2\+\_\+}{yaw_precision_2_}}]{\setlength{\rightskip}{0pt plus 5cm}int go\+\_\+to\+\_\+point\+\_\+service\+\_\+bug.\+yaw\+\_\+precision\+\_\+2\+\_\+ = math.\+pi/90}\hypertarget{namespacego__to__point__service__bug_a2cfb8eb9d839627bee23494c162a1e88}{}\label{namespacego__to__point__service__bug_a2cfb8eb9d839627bee23494c162a1e88}
+\index{go\+\_\+to\+\_\+point\+\_\+service\+\_\+bug@{go\+\_\+to\+\_\+point\+\_\+service\+\_\+bug}!z@{z}}
+\index{z@{z}!go\+\_\+to\+\_\+point\+\_\+service\+\_\+bug@{go\+\_\+to\+\_\+point\+\_\+service\+\_\+bug}}
+\subsubsection[{\texorpdfstring{z}{z}}]{\setlength{\rightskip}{0pt plus 5cm}go\+\_\+to\+\_\+point\+\_\+service\+\_\+bug.\+z}\hypertarget{namespacego__to__point__service__bug_ac72a9ad64f48ea907c94e25a3718372c}{}\label{namespacego__to__point__service__bug_ac72a9ad64f48ea907c94e25a3718372c}

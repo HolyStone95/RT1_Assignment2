@@ -1,0 +1,4 @@
+<map id="wall_follower_service.clbk_laser" name="wall_follower_service.clbk_laser">
+<area shape="rect" id="node2" href="$namespacewall__follower__service.html#a6627caa18de98475bf401975a5a4feb1" title="Take action function. " alt="" coords="235,5,419,47"/>
+<area shape="rect" id="node3" href="$namespacewall__follower__service.html#a170c8a7e77b51a43f5b3edd8b0062ac4" title="Change state function. " alt="" coords="467,5,669,47"/>
+</map>

@@ -1,0 +1,4 @@
+<map id="wall_follower_service.change_state" name="wall_follower_service.change_state">
+<area shape="rect" id="node2" href="$namespacewall__follower__service.html#a6627caa18de98475bf401975a5a4feb1" title="Take action function. " alt="" coords="256,5,440,47"/>
+<area shape="rect" id="node3" href="$namespacewall__follower__service.html#a09e3d81acac08943a5978c52bcbbfe26" title="Laser data callback output are localized in the robot in 5 regions organized as at the bottom..." alt="" coords="488,5,669,47"/>
+</map>

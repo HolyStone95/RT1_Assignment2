@@ -1,0 +1,65 @@
+\hypertarget{go__to__point__service__bug_8py}{}\section{scripts/go\+\_\+to\+\_\+point\+\_\+service\+\_\+bug.py File Reference}
+\label{go__to__point__service__bug_8py}\index{scripts/go\+\_\+to\+\_\+point\+\_\+service\+\_\+bug.\+py@{scripts/go\+\_\+to\+\_\+point\+\_\+service\+\_\+bug.\+py}}
+\subsection*{Namespaces}
+\begin{DoxyCompactItemize}
+\item 
+ \hyperlink{namespacego__to__point__service__bug}{go\+\_\+to\+\_\+point\+\_\+service\+\_\+bug}
+\item 
+ \hyperlink{namespacefinal__assignment}{final\+\_\+assignment}
+\begin{DoxyCompactList}\small\item\em This node is in charge of monitoring the state of the robot, and activate the corresping services and behaviour. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \hyperlink{namespacego__to__point__service__bug_a66835918820d392cf39cc1e3b28497ee}{go\+\_\+to\+\_\+point\+\_\+service\+\_\+bug.\+go\+\_\+to\+\_\+point\+\_\+switch} (req)
+\begin{DoxyCompactList}\small\item\em Function activated on service request. \end{DoxyCompactList}\item 
+def \hyperlink{namespacego__to__point__service__bug_acc2367a3fc6946e8ea518d82a018dcd7}{go\+\_\+to\+\_\+point\+\_\+service\+\_\+bug.\+clbk\+\_\+odom} (msg)
+\begin{DoxyCompactList}\small\item\em Function to retrieve robot pose. \end{DoxyCompactList}\item 
+def \hyperlink{namespacego__to__point__service__bug_a99587ca3714f1c59523a0fccdb4acc7d}{go\+\_\+to\+\_\+point\+\_\+service\+\_\+bug.\+change\+\_\+state} (state)
+\begin{DoxyCompactList}\small\item\em Change state function. \end{DoxyCompactList}\item 
+def \hyperlink{namespacego__to__point__service__bug_a3ff83aec5e0de49fa33f2d33681d2a49}{go\+\_\+to\+\_\+point\+\_\+service\+\_\+bug.\+normalize\+\_\+angle} (angle)
+\begin{DoxyCompactList}\small\item\em Normalize angle function. \end{DoxyCompactList}\item 
+def \hyperlink{namespacego__to__point__service__bug_a0f4f965c49e3e20c6442b10bf41e2533}{go\+\_\+to\+\_\+point\+\_\+service\+\_\+bug.\+fix\+\_\+yaw} (des\+\_\+pos)
+\begin{DoxyCompactList}\small\item\em Fix Yah function. \end{DoxyCompactList}\item 
+def \hyperlink{namespacego__to__point__service__bug_a78a4659fd178f90a4b0acb3a4da0fbc1}{go\+\_\+to\+\_\+point\+\_\+service\+\_\+bug.\+go\+\_\+straight\+\_\+ahead} (des\+\_\+pos)
+\begin{DoxyCompactList}\small\item\em Go straight function. \end{DoxyCompactList}\item 
+def \hyperlink{namespacego__to__point__service__bug_a181271bc83dc620614c43e6bd6b18db8}{go\+\_\+to\+\_\+point\+\_\+service\+\_\+bug.\+done} (des\+\_\+pos)
+\begin{DoxyCompactList}\small\item\em Done function. \end{DoxyCompactList}\item 
+def \hyperlink{namespacego__to__point__service__bug_abb5a5a69905cef8ab5baf0768056ecea}{go\+\_\+to\+\_\+point\+\_\+service\+\_\+bug.\+main} ()
+\begin{DoxyCompactList}\small\item\em Main function. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+bool \hyperlink{namespacego__to__point__service__bug_a904337d36bd7e3e63dc3d862b0f67608}{go\+\_\+to\+\_\+point\+\_\+service\+\_\+bug.\+active\+\_\+} = False
+\item 
+\hyperlink{namespacego__to__point__service__bug_a8eccd57782f5a63758c2ed6fc429648f}{go\+\_\+to\+\_\+point\+\_\+service\+\_\+bug.\+position\+\_\+} = Point()
+\item 
+int \hyperlink{namespacego__to__point__service__bug_a92ae1b18b13762d59aa27dd83ea9e04d}{go\+\_\+to\+\_\+point\+\_\+service\+\_\+bug.\+yaw\+\_\+} = 0
+\item 
+int \hyperlink{namespacego__to__point__service__bug_acf82697453e220209d6f386e1630619a}{go\+\_\+to\+\_\+point\+\_\+service\+\_\+bug.\+state\+\_\+} = 0
+\item 
+\hyperlink{namespacego__to__point__service__bug_a5c33b74b7f2376e73690f8474fc4db36}{go\+\_\+to\+\_\+point\+\_\+service\+\_\+bug.\+desired\+\_\+position\+\_\+} = Point()
+\item 
+\hyperlink{namespacego__to__point__service__bug_a6761dc57b29d40d3e6578b775a1e84c2}{go\+\_\+to\+\_\+point\+\_\+service\+\_\+bug.\+x}
+\item 
+\hyperlink{namespacego__to__point__service__bug_a9eac097a440f4f16c9e7260e5296fd76}{go\+\_\+to\+\_\+point\+\_\+service\+\_\+bug.\+y}
+\item 
+\hyperlink{namespacego__to__point__service__bug_ac72a9ad64f48ea907c94e25a3718372c}{go\+\_\+to\+\_\+point\+\_\+service\+\_\+bug.\+z}
+\item 
+int \hyperlink{namespacego__to__point__service__bug_aa27745ad563c25adbac628695bbdd44d}{go\+\_\+to\+\_\+point\+\_\+service\+\_\+bug.\+yaw\+\_\+precision\+\_\+} = math.\+pi/9
+\item 
+int \hyperlink{namespacego__to__point__service__bug_a2cfb8eb9d839627bee23494c162a1e88}{go\+\_\+to\+\_\+point\+\_\+service\+\_\+bug.\+yaw\+\_\+precision\+\_\+2\+\_\+} = math.\+pi/90
+\item 
+float \hyperlink{namespacego__to__point__service__bug_a1142014aa3b5c0819cd183c7b4534927}{go\+\_\+to\+\_\+point\+\_\+service\+\_\+bug.\+dist\+\_\+precision\+\_\+} = 0.\+3
+\item 
+float \hyperlink{namespacego__to__point__service__bug_ab4d1411316c963d5b211e42f78cf3c93}{go\+\_\+to\+\_\+point\+\_\+service\+\_\+bug.\+kp\+\_\+a} = 3.\+0
+\item 
+float \hyperlink{namespacego__to__point__service__bug_a0aa73d2814be9d22fc2a6e4eaa0afc07}{go\+\_\+to\+\_\+point\+\_\+service\+\_\+bug.\+kp\+\_\+d} = 0.\+2
+\item 
+float \hyperlink{namespacego__to__point__service__bug_aa2cfb37c171e32902af10e4f4121f92f}{go\+\_\+to\+\_\+point\+\_\+service\+\_\+bug.\+ub\+\_\+a} = 0.\+6
+\item 
+float \hyperlink{namespacego__to__point__service__bug_a60404a026e5fcd840f8a6f712edfb71f}{go\+\_\+to\+\_\+point\+\_\+service\+\_\+bug.\+lb\+\_\+a} = -\/0.\+5
+\item 
+float \hyperlink{namespacego__to__point__service__bug_a0ea364ac6b209e590e96109ca6fb7a5c}{go\+\_\+to\+\_\+point\+\_\+service\+\_\+bug.\+ub\+\_\+d} = 0.\+6
+\item 
+\hyperlink{namespacego__to__point__service__bug_a303812c1ccf752e711d273e93c27293d}{go\+\_\+to\+\_\+point\+\_\+service\+\_\+bug.\+pub} = None
+\end{DoxyCompactItemize}

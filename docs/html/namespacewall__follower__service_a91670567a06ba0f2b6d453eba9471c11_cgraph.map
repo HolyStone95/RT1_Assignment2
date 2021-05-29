@@ -1,0 +1,5 @@
+<map id="wall_follower_service.main" name="wall_follower_service.main">
+<area shape="rect" id="node2" href="$namespacewall__follower__service.html#a84de27c394cf900d7c30a6ab16409304" title="Function to find a wall. " alt="" coords="241,5,451,32"/>
+<area shape="rect" id="node3" href="$namespacewall__follower__service.html#a242dccb66f79027a138469906f3c10e1" title="Turn left function. " alt="" coords="241,56,451,83"/>
+<area shape="rect" id="node4" href="$namespacewall__follower__service.html#ac88d2c0d79a9b96805cd274c64d1bd80" title="Follow the wall function. " alt="" coords="251,107,441,149"/>
+</map>

@@ -1,0 +1,5 @@
+<map id="big_brain.main" name="big_brain.main">
+<area shape="rect" id="node2" href="$namespacebig__brain.html#a108d0111d106a89cde8da1c2f494ab3c" title="Function for changing the state of the robot. " alt="" coords="169,5,340,32"/>
+<area shape="rect" id="node4" href="$namespacebig__brain.html#adfc26e0690fd9fe893e09be5400a8b7d" title="Function for computing the distance from the robot actual position to the desired position..." alt="" coords="185,56,324,83"/>
+<area shape="rect" id="node3" href="$namespacebig__brain.html#a4f091a106e4ba678afd9bc2df4f2789b" title="Function for setting a new target with a MoveBaseActionGoal msg on topic /movebase/goal. " alt="" coords="388,5,531,32"/>
+</map>

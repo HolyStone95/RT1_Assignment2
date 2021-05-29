@@ -1,0 +1,28 @@
+var bug__algo_8py =
+[
+    [ "bug_algorithm_srv", "bug__algo_8py.html#afe2965502b3ec1efdb6ac2dadfb9a5de", null ],
+    [ "change_state", "bug__algo_8py.html#aca287deda75aa8d0f790135ef47b6a16", null ],
+    [ "clbk_laser", "bug__algo_8py.html#a4363ca4faa041280e958c5141bc3bde8", null ],
+    [ "clbk_odom", "bug__algo_8py.html#a6a72a118f8a289bf80b1fe79487b273f", null ],
+    [ "main", "bug__algo_8py.html#a8df2ef2049aa935d5478597523b50dcb", null ],
+    [ "normalize_angle", "bug__algo_8py.html#ae499da57d8d88a30b64054480fdb60c8", null ],
+    [ "active_", "bug__algo_8py.html#a3bec537d2bfc115b0a14ee6bad41bd00", null ],
+    [ "actual_time", "bug__algo_8py.html#af9e77fe7842316d1491ef585c7602710", null ],
+    [ "desired_position_", "bug__algo_8py.html#a6bc76d9dd5213819c8287c8833f8f3bd", null ],
+    [ "elapsed_time", "bug__algo_8py.html#af723ba0d909555b34934483c74e06818", null ],
+    [ "position_", "bug__algo_8py.html#ac0035ad008802f966f437b4787365220", null ],
+    [ "pub", "bug__algo_8py.html#a17a7504f2f0f6714f6ac31a43107fc31", null ],
+    [ "regions_", "bug__algo_8py.html#a31fd6300649f8a600eb87ebed00b174f", null ],
+    [ "srv_client_go_to_point_", "bug__algo_8py.html#a52e8d210b667d955534f12f59f191eb3", null ],
+    [ "srv_client_user_interface_", "bug__algo_8py.html#a1a55011236874d9af4afcf4c3524bbf0", null ],
+    [ "srv_client_user_interface_assignment_", "bug__algo_8py.html#ac9de3b470960260c4510748850446480", null ],
+    [ "srv_client_wall_follower_", "bug__algo_8py.html#afe0f6c6a1a9bc751e4bbcae499815585", null ],
+    [ "start_time", "bug__algo_8py.html#a6ff626c7bf6a4dfec4e8508d8ae5097c", null ],
+    [ "state_", "bug__algo_8py.html#a5bf52a66b7821a097f6e653a2422748e", null ],
+    [ "state_desc_", "bug__algo_8py.html#a419cb7998b9a3946692fc01f5d73a25b", null ],
+    [ "x", "bug__algo_8py.html#ae006850add8691db5d752b4ccb732ac1", null ],
+    [ "y", "bug__algo_8py.html#a1e2d049a4b898c92454f0fb146a413ee", null ],
+    [ "yaw_", "bug__algo_8py.html#a2c8d86dd369e86415dc7ff9c617033d7", null ],
+    [ "yaw_error_allowed_", "bug__algo_8py.html#a3714c955ff3cf688c84d6dc5654833d6", null ],
+    [ "z", "bug__algo_8py.html#ad9944dcf5037184fbfbe3162935d2a57", null ]
+];

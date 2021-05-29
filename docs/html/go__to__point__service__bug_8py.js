@@ -1,0 +1,28 @@
+var go__to__point__service__bug_8py =
+[
+    [ "change_state", "go__to__point__service__bug_8py.html#a99587ca3714f1c59523a0fccdb4acc7d", null ],
+    [ "clbk_odom", "go__to__point__service__bug_8py.html#acc2367a3fc6946e8ea518d82a018dcd7", null ],
+    [ "done", "go__to__point__service__bug_8py.html#a181271bc83dc620614c43e6bd6b18db8", null ],
+    [ "fix_yaw", "go__to__point__service__bug_8py.html#a0f4f965c49e3e20c6442b10bf41e2533", null ],
+    [ "go_straight_ahead", "go__to__point__service__bug_8py.html#a78a4659fd178f90a4b0acb3a4da0fbc1", null ],
+    [ "go_to_point_switch", "go__to__point__service__bug_8py.html#a66835918820d392cf39cc1e3b28497ee", null ],
+    [ "main", "go__to__point__service__bug_8py.html#abb5a5a69905cef8ab5baf0768056ecea", null ],
+    [ "normalize_angle", "go__to__point__service__bug_8py.html#a3ff83aec5e0de49fa33f2d33681d2a49", null ],
+    [ "active_", "go__to__point__service__bug_8py.html#a904337d36bd7e3e63dc3d862b0f67608", null ],
+    [ "desired_position_", "go__to__point__service__bug_8py.html#a5c33b74b7f2376e73690f8474fc4db36", null ],
+    [ "dist_precision_", "go__to__point__service__bug_8py.html#a1142014aa3b5c0819cd183c7b4534927", null ],
+    [ "kp_a", "go__to__point__service__bug_8py.html#ab4d1411316c963d5b211e42f78cf3c93", null ],
+    [ "kp_d", "go__to__point__service__bug_8py.html#a0aa73d2814be9d22fc2a6e4eaa0afc07", null ],
+    [ "lb_a", "go__to__point__service__bug_8py.html#a60404a026e5fcd840f8a6f712edfb71f", null ],
+    [ "position_", "go__to__point__service__bug_8py.html#a8eccd57782f5a63758c2ed6fc429648f", null ],
+    [ "pub", "go__to__point__service__bug_8py.html#a303812c1ccf752e711d273e93c27293d", null ],
+    [ "state_", "go__to__point__service__bug_8py.html#acf82697453e220209d6f386e1630619a", null ],
+    [ "ub_a", "go__to__point__service__bug_8py.html#aa2cfb37c171e32902af10e4f4121f92f", null ],
+    [ "ub_d", "go__to__point__service__bug_8py.html#a0ea364ac6b209e590e96109ca6fb7a5c", null ],
+    [ "x", "go__to__point__service__bug_8py.html#a6761dc57b29d40d3e6578b775a1e84c2", null ],
+    [ "y", "go__to__point__service__bug_8py.html#a9eac097a440f4f16c9e7260e5296fd76", null ],
+    [ "yaw_", "go__to__point__service__bug_8py.html#a92ae1b18b13762d59aa27dd83ea9e04d", null ],
+    [ "yaw_precision_", "go__to__point__service__bug_8py.html#aa27745ad563c25adbac628695bbdd44d", null ],
+    [ "yaw_precision_2_", "go__to__point__service__bug_8py.html#a2cfb8eb9d839627bee23494c162a1e88", null ],
+    [ "z", "go__to__point__service__bug_8py.html#ac72a9ad64f48ea907c94e25a3718372c", null ]
+];
