@@ -10,16 +10,16 @@ The bug algoritm has a bug that I'm not being able to solve: sometimes when a go
 
 ## How to run 
 
-In the *launch* folder of this package there are 4 launch files, in order to set everything up please run in order :
+In the *launch* folder of this package there are 4 launch files, in order to set everything up please run in order and in different shells:
 
 ```
 roslaunch final_assignment gmapping.launch
 ```
 ```
-roslaunch final ssignment movebase.launch
+roslaunch final_assignment movebase.launch
 ```
 ```
-roslaunch final assignment main.launch
+roslaunch final_assignment main.launch
 ```
 
 At this point the interface should be online
@@ -28,6 +28,6 @@ At this point the interface should be online
 
 To find the complete documentation for this project go in *docs/html* folder and open **index.html**
 
-##Rqt_Graph
+## Rqt_Graph
 
 ![alt rqt_graph](https://github.com/BullshidoArtist/RT1_Assignment2/blob/master/rosgraph.png)
