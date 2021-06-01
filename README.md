@@ -29,5 +29,4 @@ At this point the interface should be online
 To find the complete documentation for this project go in *docs/html* folder and open **index.html**
 
 ## Rqt_Graph
-
-![alt rqt_graph](https://github.com/BullshidoArtist/RT1_Assignment2/blob/master/rosgraph.png)
+![alt rqt_graph](https://github.com/HolyStone95/RT1_Assignment2/blob/master/rosgraph.png)
